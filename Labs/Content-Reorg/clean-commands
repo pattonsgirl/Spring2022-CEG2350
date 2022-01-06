@@ -1,0 +1,25 @@
+# Note: not all of these commands may do something on your system (the files moay not exist)
+
+sudo rm /boot/initrd.img-5.4.0-1039-aws
+sudo rm /boot/vmlinuz-5.4.0-1039-aws
+sudo rm /boot/initrd.img-5.4.0-1041-aws
+sudo rm /boot/vmlinuz-5.4.0-1041-aws
+# check if it's doing anything
+df -h
+
+sudo rm -rf /lib/modules/5.4.0-1035-aws
+sudo rm -rf /lib/modules/5.4.0-1037-aws
+sudo rm -rf /lib/modules/5.4.0-1038-aws
+sudo rm -rf /lib/modules/5.4.0-1039-aws
+# check again
+df -h
+
+# you may or not not need this command.  If apt gets fussy, just run this (also, it tells you to if its fussy)
+sudo apt --fix-broken install
+# this is the real difference maker.  
+sudo apt autoremove
+
+# Others to run:
+# these commands must be run inside your folder connected to github
+rm -f .git/objects/*/tmp_*
+git gc --aggressive --prune=now
