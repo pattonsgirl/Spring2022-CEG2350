@@ -18,35 +18,32 @@ This guide is for new users who need to set up their environment.
 
 ### Install WSL 2
 
-- [Follow instructions on the Windows blog](https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps)
+- [Follow instructions on the Windows blog](https://docs.microsoft.com/en-us/windows/wsl/setup/environment)
 - Common pitfalls:
   - Windows is not fully up to date.
-  - Did not reboot **before** running the change version command
   - Need to enable CPU virtualization in the BIOS. See the user manual for your computer.
-- After installing Ubuntu from the Windows store, open Ubuntu once
-- After the installion message finishes, you should be prompted to create a username and password.
   - Your username cannot have special characters or spaces or you will get a rules error
 
 ### Terminal Manager
 
-In later labs, you will need two terminals open. It is absolutely alright to open multiple instances of Ubuntu, but it can be convenient to have a "tab" based setup. I recommend `Windows Terminal` (can be found in the Windows Store) or `MobaXTerm` (installation instructions below)
+In later labs, you will need two terminals open. It is absolutely alright to open multiple instances of WSL2 Ubuntu, but it can be convenient to have a "tab" based setup. I recommend `Windows Terminal` (can be found in the Windows Store) or `MobaXTerm` (installation instructions below)
 
 ### Install MobaXTerm
 
-[Download MobaXterm Home Edition: Installer Edition](https://download.mobatek.net/2062020111930940/MobaXterm_Installer_v20.6.zip)
+[Download MobaXterm Home Edition: Installer Edition](https://download.mobatek.net/2152021112100754/MobaXterm_Installer_v21.5.zip)
 
 - Extract the contents to your Desktop.
 - Double-click to run the installer
 - Once installed, run the program one time - this finishes the installation
 - You can now delete the installation files
-- Open Moba. You can now choose to run WSL Ubuntu _or_ Moba bash.
+- Open Moba. You can now choose to run WSL Ubuntu
   - To change terminals, go to Settings -> Configuration. Select the Terminal tab. In the dropdown at the bottom, change from `bash` to `WSL Ubuntu`
-- Keep your SSH session "alive"
+- Keep your SSH session "alive" - prevent timeouts from not interacting
   - `Settings` -> `Configuration`. In `SSH` tab, checkmark the box corresponding to `SSH keepalive`
 
-If you **do not have administrative privileges** on the system, you will need to install MobaXTerm (step 3) and install Cygutils (instructions below) in order to perform the labs.
+#### add cygutils
 
-### add cygutils
+If you **do not have administrative privileges** on your Windows system (or have a much older system), you will need to install MobaXTerm (step 3) and install Cygutils (instructions below) in order to perform the labs.
 
 - In Moba, select the Packages icon at the top.
 - Wait for the package menu to appear.
