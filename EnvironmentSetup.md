@@ -28,6 +28,9 @@ This guide is for new users who need to set up their environment.
    - Search for "Ubuntu"
    - Select "Get"
    - Done
+   - **Untested** alternative to Windows Store:
+     - Open Powershell as Administrator
+     - Enter the following command: `wsl --install -d Ubuntu`
 
 5. When you first open WSL2, you will be greeted with something similar to the following:
    ![Ubuntu Install](Images/ubuntuinstall.png)
