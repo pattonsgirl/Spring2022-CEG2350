@@ -29,9 +29,9 @@ This lab assumes
 
 ## Lab Procedure
 
-For each lab in this course, you will be provided with a lab template to fill in your lab answers. The [Lab 01 Template can be copied from this link](https://raw.githubusercontent.com/pattonsgirl/Spring2022-CEG2350/main/Labs/Lab-01/LabTemplate.md):
+For each lab in this course, you will be provided with a lab template to fill in your lab answers. The [Lab 01 Template can be copied from this link](https://raw.githubusercontent.com/pattonsgirl/Spring2022-CEG2350/main/Labs/Lab01/LabTemplate.md):
 
-- `https://raw.githubusercontent.com/pattonsgirl/Spring2022-CEG2350/main/Labs/Lab-01/LabTemplate.md`
+- `https://raw.githubusercontent.com/pattonsgirl/Spring2022-CEG2350/main/Labs/Lab01/LabTemplate.md`
 
 In your browser, go to your GitHub repository - `https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME`
 
