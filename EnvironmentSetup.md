@@ -24,7 +24,7 @@ This guide is for new users who need to set up their environment.
 4. This should have also downloaded and installed a program called "Ubuntu", which you can find in your apps.
 
    - If this is **not** true, perform the following steps:
-   - Go to Windows Store
+   - Go to Microsoft Store
    - Search for "Ubuntu"
    - Select "Get"
    - Done
