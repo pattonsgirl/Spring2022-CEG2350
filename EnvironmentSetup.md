@@ -18,22 +18,22 @@ This guide is for new users who need to set up their environment.
 
 ### Install WSL 2
 
-- Open Powershell as Administrator
-- Enter the following command: `wsl --install`
-- Reboot your machine
-- This should have also downloaded and installed a program called "Ubuntu", which you can find in your apps.
+1. Open Powershell as Administrator
+2. Enter the following command: `wsl --install`
+3. Reboot your machine
+4. This should have also downloaded and installed a program called "Ubuntu", which you can find in your apps.
 
-  - If this is **not** true, perform the following steps:
-  - Go to Windows Store
-  - Search for "Ubuntu"
-  - Select "Get"
-  - Done
+- If this is **not** true, perform the following steps:
+- Go to Windows Store
+- Search for "Ubuntu"
+- Select "Get"
+- Done
 
-- When you first open WSL2, you will be greeted with something similar to the following:
-  ![Ubuntu Install](Images/ubuntuinstall.png)
+5. When you first open WSL2, you will be greeted with something similar to the following:
+   ![Ubuntu Install](Images/ubuntuinstall.png)
 
-  - Create a username - do not use spaces or special characters
-  - Create a password - yes, it is taking your input. Press backspace a lot if you think you made a typo
+- Create a username - do not use spaces or special characters
+- Create a password - yes, it is taking your input. Press backspace a lot if you think you made a typo
 
 - Resources:
   - [How to Geek WSL2 installation guide](https://www.howtogeek.com/744328/how-to-install-the-windows-subsystem-for-linux-on-windows-11/)
