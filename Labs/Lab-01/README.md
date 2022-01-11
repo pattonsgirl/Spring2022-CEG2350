@@ -7,7 +7,6 @@
 - [Part 4 - Regular `bob`](#Part-4---Regular-bob)
 - [Part 5 - Get a `crew`](#Part-5---Get-a-crew)
 - [Part 6 - `sudo` make me a sandwich](#Part-6---sudo-make-me-a-sandwich)
-- [Part 7 - `git` & GitHub](#Part-7---git-and-GitHub)
 - [Extra Credit - Test your skills](#Extra-Credit---Test-your-skills)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
@@ -30,9 +29,15 @@ This lab assumes
 
 ## Lab Procedure
 
-For each lab in this course, you will be provided with a lab template to fill in your lab answers.
+For each lab in this course, you will be provided with a lab template to fill in your lab answers. The [Lab 01 Template can be copied from this link](https://raw.githubusercontent.com/pattonsgirl/Spring2022-CEG2350/main/Labs/Lab-01/LabTemplate.md):
 
-Document your answers in a plain text file named `Lab02-LastName.txt` where LastName is your last name. You can also skip down to Part 7 and start with the [LabTemplate.md](LabTemplate.md).
+- `https://raw.githubusercontent.com/pattonsgirl/Spring2022-CEG2350/main/Labs/Lab-01/LabTemplate.md`
+
+In your browser, go to your GitHub repository - `https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME`
+
+Click the `Add File` button, then select "Create new file"
+
+Name the file `Lab01.md`. In the edit file box, **paste** the contents of the lab template.
 
 For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
 
@@ -44,7 +49,13 @@ Answer: `touch bubbles.txt`
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
-It is expected that all parts are done on your AWS instance (the thing you `ssh` into).
+When you are ready to save your work (or take a break), scroll to the bottom to view the dialog regarding `commit`ting your work. For the moment, think of commit as save points. For each save point, you will write a message about what changed.
+
+- Notice their are two textboxes in the commit field - skinny and paragraph sized. The skinny box is where you'll place a quick description - this one is required to create a `commit`. The paragraph sized box is where you can add bigger details about changes.
+- The radio button defaults to select `Commit directly to the main branch.` - leave this as is.
+- Select the green `Commit` button when you are ready to save your work.
+
+To continue editing your file, click on the file, then click on the "Edit this file" pencil icon towards the right. When you are done editing, repeat the steps above to `commit` your work.
 
 ## Part 1 - Play with directories and naming
 
@@ -77,12 +88,12 @@ It is expected that all parts are done on your AWS instance (the thing you `ssh`
 
 1. Create a new user named `bob`
 2. What is the path to `bob`'s `home` directory?
-3. Can the `ubuntu` user add files to `bob`'s home directory? Why or why not?
+3. Can your user add files to `bob`'s home directory? Why or why not?
 4. Switch to the user `bob`
 5. Get to `bob`'s `home` directory
 6. Can `bob` add files to `bob`'s home directory? Why or why not?
-7. Switch back to the `ubuntu` user
-8. Return to the `ubuntu` user's `home` directory
+7. Switch back to the your user
+8. Return to the your user's `home` directory
 
 ## Part 5 - Get a `crew`
 
@@ -90,7 +101,7 @@ It is expected that all parts are done on your AWS instance (the thing you `ssh`
 
 1. Create a new group named `crew`
 2. Add `ubuntu` and `bob` to the `crew` group
-3. Change `DirA` in the `ubuntu` user's home directory so that `crew` is the group for the whole folder
+3. Change `DirA` in the your user's home directory so that `crew` is the group for the whole folder
    - Yes, including contents in `DirA`
 4. Switch user to `bob`
 5. As `bob` create a file in `DirA`.
@@ -100,34 +111,9 @@ It is expected that all parts are done on your AWS instance (the thing you `ssh`
 
 - **Useful commands for this part: `sudo`**
 
-1. In the `ubuntu` user's `home` directory, make a file with `sudo` named `sudowho.txt`
+1. In the your user's `home` directory, make a file with `sudo` named `sudowho.txt`
 2. What are the permissions of this file?
-3. Without modifying the permissions of the file, edit the file and add some text.
-
-## Part 7 - `git` and GitHub
-
-You do not need to write anything in your Lab for this part, just focus on getting answers up to GitHub.
-
-1. On your Ubuntu system we made on AWS (Lab01), go into the folder you cloned  
-   **Useful Commands: `pwd, ls, cd`**
-2. Create and open a file named `Lab02.md`  
-   **Useful Commands: `vim`**
-3. Check out the [Lab Template](LabTemplate.md)
-
-- View the [raw version of the Lab Template](https://raw.githubusercontent.com/pattonsgirl/Fall2021-CEG2350/main/Labs/Lab02/LabTemplate.md)
-
-4. Copy the format of the lab template and fill it in with your lab answers.
-
-- [Basic `vim` usage](https://www.howtoforge.com/vim-basics)
-
-5. You have now made a new file, added some text to it, and (hopefully) made it look fancy... but how can we test this?
-6. Use `git` commands to `add`, `commit` and `push` the file you made to GitHub.
-
-- If successful, when you go to the repository in your browser, you'll see `Lab02.md` as something you can click to view.
-
-7. Now that you can see it, go back to your file and make tweaks if needed to fix the markdown.
-
-- Once you are done making changes, use `git` commands to `commit` and `push` the changes to GitHub - hitting refresh will show the updated version.
+3. Without modifying the permissions of the file, edit the file and add some text, and save the changes.
 
 ## Extra Credit - Test your skills
 
@@ -137,7 +123,7 @@ You do not need to write anything in your Lab for this part, just focus on getti
    - `-rw------- sally crew [size] [datetime] mydiary.txt`
    - where `[size]` and `[datetime]` are going to be unique for you
    - write all steps needed to make this happen
-2. `ubuntu` would like to edit `sally`'s `mydiary.txt` file, just to mess with her. How can `ubuntu` do this without changing the permissions?
+2. Your user would like to edit `sally`'s `mydiary.txt` file, just to mess with her. How can your user do this without changing the permissions?
 3. `bob` wants in on the joke to edit `sally`'s `mydiary.txt` file, just to mess with her. How can `bob` do this without changing the permissions?
 
 ## Submission
