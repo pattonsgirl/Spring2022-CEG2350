@@ -18,10 +18,29 @@ This guide is for new users who need to set up their environment.
 
 ### Install WSL 2
 
-- [Follow instructions on the Windows blog](https://docs.microsoft.com/en-us/windows/wsl/setup/environment)
+- Open Powershell as Administrator
+- Enter the following command: `wsl --install`
+- Reboot your machine
+- This should have also downloaded and installed a program called "Ubuntu", which you can find in your apps.
+
+  - If this is **not** true, perform the following steps:
+  - Go to Windows Store
+  - Search for "Ubuntu"
+  - Select "Get"
+  - Done
+
+- When you first open WSL2, you will be greeted with something similar to the following:
+  ![Ubuntu Install](Images/ubuntuinstall.png)
+
+  - Create a username - do not use spaces or special characters
+  - Create a password - yes, it is taking your input. Press backspace a lot if you think you made a typo
+
+- Resources:
+  - [How to Geek WSL2 installation guide](https://www.howtogeek.com/744328/how-to-install-the-windows-subsystem-for-linux-on-windows-11/)
+  - [Instructions on the Windows blog](https://docs.microsoft.com/en-us/windows/wsl/setup/environment)
 - Common pitfalls:
   - Windows is not fully up to date.
-  - Need to enable CPU virtualization in the BIOS. See the user manual for your computer.
+  - Need to enable CPU virtualization in the BIOS. See the user manual for your computer
   - Your username cannot have special characters or spaces or you will get a rules error
 
 ### Terminal Manager
