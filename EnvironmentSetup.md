@@ -104,3 +104,9 @@ Virtual hard disk files must be uncompressed and unencrypted and must not be spa
 ```
 
 - Follow [WSL2 VHD Issue Guide](https://utf9k.net/blog/wsl2-vhd-issue/)
+
+- Forgot password:
+  - Close out of Ubuntu (the app).
+  - Hit the Windows key, and search for Ubuntu -> don't open the app.
+  - Instead click on "App Settings", then scroll down and select "Reset".
+  - Next time you open Ubuntu (the app) it will prompt for a username and password.
