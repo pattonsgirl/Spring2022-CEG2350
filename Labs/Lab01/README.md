@@ -39,7 +39,7 @@ Click the `Add File` button, then select "Create new file"
 
 Name the file `Lab01.md`. In the edit file box, **paste** the contents of the lab template.
 
-For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
+For each part below, you will be asked to perform an action or answer a question. The actions are going to be commands - __you will write the command(s) you used as "answers" to the action requested__. You are allowed to use multiple commands to solve an action. Just make sure to write every command you used to complete the action. Check with the TAs if you need clarification.
 
 ```
 Example:
@@ -49,13 +49,16 @@ Answer: `touch bubbles.txt`
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
-When you are ready to save your work (or take a break), scroll to the bottom to view the dialog regarding `commit`ting your work. For the moment, think of commit as save points. For each save point, you will write a message about what changed.
+When you are ready to save your work (or take a break), scroll to the bottom to view the dialog regarding `commit`ting your work. For the moment, think of commits as save points. For each save point, you will write a message about what changed.
 
-- Notice their are two textboxes in the commit field - skinny and paragraph sized. The skinny box is where you'll place a quick description - this one is required to create a `commit`. The paragraph sized box is where you can add bigger details about changes.
+- Notice there are two textboxes in the commit field - skinny and paragraph sized. The skinny box is where you'll place a quick description - this one is required to create a `commit`. The paragraph sized box is where you can add bigger details about changes.
 - The radio button defaults to select `Commit directly to the main branch.` - leave this as is.
 - Select the green `Commit` button when you are ready to save your work.
 
-To continue editing your file, click on the file, then click on the "Edit this file" pencil icon towards the right. When you are done editing, repeat the steps above to `commit` your work.
+To continue editing your file:
+- Click on the file 
+- Click on the "Edit this file" pencil icon towards the right
+- When you are done editing, repeat the steps above to `commit` your work.
 
 ## Part 1 - Play with directories and naming
 
