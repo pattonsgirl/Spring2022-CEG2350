@@ -27,3 +27,9 @@
 13. Your machine will be assigned an Elastic IP address. This IP address is what we will use to SSH into the
     virtual environment.
 14. Use SSH to log in: `ssh -i vockey.pem ubuntu@ElasticIP`
+
+## TODOS
+
+- Instructions to turn instance back on after 4 hours
+- Figure out classroom divisions (students taking more than one AWS course at a time)
+- People adding - name requirements?
