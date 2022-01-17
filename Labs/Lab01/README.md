@@ -103,7 +103,7 @@ To continue editing your file:
 - **Useful commands for this part: `addgroup, usermod, chown, chgrp`**
 
 1. Create a new group named `crew`
-2. Add `ubuntu` and `bob` to the `crew` group
+2. Add your user and `bob` to the `crew` group
 3. Change `DirA` in the your user's home directory so that `crew` is the group for the whole folder
    - Yes, including contents in `DirA`
 4. Switch user to `bob`
