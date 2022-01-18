@@ -104,7 +104,7 @@ To continue editing your file:
 
 1. Create a new group named `crew`
 2. Add your user and `bob` to the `crew` group
-3. Change `DirA` in the your user's home directory so that `crew` is the group for the whole folder
+3. Change `DirA` in  your user's home directory so that `crew` is the group for the whole folder
    - Yes, including contents in `DirA`
 4. Switch user to `bob`
 5. As `bob` create a file in `DirA`.
