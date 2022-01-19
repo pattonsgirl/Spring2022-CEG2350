@@ -5,9 +5,9 @@
 
 ## Part 1 Answers
 
-Since this part is "proved" by content existing in your repo, no answers are required.  
-For good practice, you are welcome to document your steps as all following labs will  
-reuse a very similar workflow.
+1. Add a file for tracking:
+2. Commit changes:
+3. Sync local content with GitHub:
 
 ## Part 2 Answers
 
