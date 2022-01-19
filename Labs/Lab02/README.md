@@ -26,6 +26,7 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 4. In your repo folder, create a folder named `Lab02`
 5. In the `Lab02` folder, create a file named `Lab02.md`
 6. Paste the contents of the [LabTemplate.md](LabTemplate.md) into this file
+7. `add` `Lab02.md` for tracking, `commit` changes as you go, and `push` to synchronize with GitHub
 
 - **Resources:**
 - [GitHub Classrooms - How to Use](GitHubClassrooms.md)
