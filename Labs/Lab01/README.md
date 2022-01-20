@@ -89,7 +89,7 @@ To continue editing your file:
 ## Part 4 - Regular `bob`
 
 - **Useful commands for this part: `adduser, sudo, su, chown, pwd, cd, whoami, exit`**
-- Mac users: see [note][#mac-users-note]
+- Mac users: see [note](#mac-users-note)
 
 1. Create a new user named `bob`
 2. What is the path to `bob`'s `home` directory?
@@ -103,7 +103,7 @@ To continue editing your file:
 ## Part 5 - Get a `crew`
 
 - **Useful commands for this part: `addgroup, usermod, chown, chgrp`**
-- Mac users: see [note][#mac-users-note]
+- Mac users: see [note](#mac-users-note)
 
 1. Create a new group named `crew`
 2. Add your user and `bob` to the `crew` group
@@ -116,7 +116,7 @@ To continue editing your file:
 ## Part 6 - [`sudo` make me a sandwich](https://xkcd.com/149/)
 
 - **Useful commands for this part: `sudo`**
-- Mac users: see [note][#mac-users-note]
+- Mac users: see [note](#mac-users-note)
 
 1. In the your user's `home` directory, make a file with `sudo` named `sudowho.txt`
 2. What are the permissions of this file?
@@ -125,7 +125,7 @@ To continue editing your file:
 ## Extra Credit - Test your skills
 
 - **Useful commands for this part: All of the above!**
-- Mac users: see [note][#mac-users-note]
+- Mac users: see [note](#mac-users-note)
 
 1. Create a file in `DirB` with the following permission set:
    - `-rw------- sally crew [size] [datetime] mydiary.txt`
