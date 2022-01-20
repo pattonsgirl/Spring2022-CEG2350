@@ -39,7 +39,7 @@ Click the `Add File` button, then select "Create new file"
 
 Name the file `Lab01.md`. In the edit file box, **paste** the contents of the lab template.
 
-For each part below, you will be asked to perform an action or answer a question. The actions are going to be commands - __you will write the command(s) you used as "answers" to the action requested__. You are allowed to use multiple commands to solve an action. Just make sure to write every command you used to complete the action. Check with the TAs if you need clarification.
+For each part below, you will be asked to perform an action or answer a question. The actions are going to be commands - **you will write the command(s) you used as "answers" to the action requested**. You are allowed to use multiple commands to solve an action. Just make sure to write every command you used to complete the action. Check with the TAs if you need clarification.
 
 ```
 Example:
@@ -56,7 +56,8 @@ When you are ready to save your work (or take a break), scroll to the bottom to 
 - Select the green `Commit` button when you are ready to save your work.
 
 To continue editing your file:
-- Click on the file 
+
+- Click on the file
 - Click on the "Edit this file" pencil icon towards the right
 - When you are done editing, repeat the steps above to `commit` your work.
 
@@ -88,6 +89,7 @@ To continue editing your file:
 ## Part 4 - Regular `bob`
 
 - **Useful commands for this part: `adduser, sudo, su, chown, pwd, cd, whoami, exit`**
+- Mac users: see [note][#mac-users-note]
 
 1. Create a new user named `bob`
 2. What is the path to `bob`'s `home` directory?
@@ -101,10 +103,11 @@ To continue editing your file:
 ## Part 5 - Get a `crew`
 
 - **Useful commands for this part: `addgroup, usermod, chown, chgrp`**
+- Mac users: see [note][#mac-users-note]
 
 1. Create a new group named `crew`
 2. Add your user and `bob` to the `crew` group
-3. Change `DirA` in  your user's home directory so that `crew` is the group for the whole folder
+3. Change `DirA` in your user's home directory so that `crew` is the group for the whole folder
    - Yes, including contents in `DirA`
 4. Switch user to `bob`
 5. As `bob` create a file in `DirA`.
@@ -113,6 +116,7 @@ To continue editing your file:
 ## Part 6 - [`sudo` make me a sandwich](https://xkcd.com/149/)
 
 - **Useful commands for this part: `sudo`**
+- Mac users: see [note][#mac-users-note]
 
 1. In the your user's `home` directory, make a file with `sudo` named `sudowho.txt`
 2. What are the permissions of this file?
@@ -121,6 +125,7 @@ To continue editing your file:
 ## Extra Credit - Test your skills
 
 - **Useful commands for this part: All of the above!**
+- Mac users: see [note][#mac-users-note]
 
 1. Create a file in `DirB` with the following permission set:
    - `-rw------- sally crew [size] [datetime] mydiary.txt`
@@ -140,3 +145,14 @@ To continue editing your file:
 - This lab is worth a total of 26 points
 - The extra credit is also worth 1 point per question
 - This makes the extra credit worth ~11.54%
+
+## Mac Users Note
+
+You caught me, no, I have not played much with Macs. Command line management of users and groups on Mac OS is doable, but quite messy. Therefore, please take note of the following workaround.
+
+It is easiest to come to campus and use WSL2 on the labs. If this is not possible for you for reasons:
+This is a browser based Linux system (written in javascript; it's neat): https://bellard.org/jslinux/vm.html?url=alpine-x86.cfg&mem=192
+
+Using the terminal provided here, you can create users, play with sudo, etc. By default, only the root user exists. In order to recreate the lab scenario, I recommend starting by creating a user that you can think of as yourself (useradd), then switch to that account (su). You'll need to make some directories in your user's directory to make things interesting, and the rest should be as expected.
+
+Starting next week we will roll out access to AWS, which will help put everyone in a uniform environment and avoid conflicts of OS in the future.
