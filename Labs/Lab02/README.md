@@ -15,7 +15,7 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## Part 1 - AWS Academy Setup
 
-An email was sent to your wright.edu account inviting your join AWS Academy.  
+An email was sent to your wright.edu account inviting you to join AWS Academy.  
 Follow the instructions in [AWS Academy](AWSAcademy.md) to set up your AWS instance.
 
 ## Part 2 - git cloning
