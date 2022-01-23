@@ -1,12 +1,9 @@
 # Lab 02 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - git cloning](#Part-1---git-cloning)
-- [Part 2 - IO Redirection](#Part-2---IO-Redirection)
-- [Part 3 - Intro to Scripts](#Part-3---Intro-to-Scripts)
-- [Part 4 - Intro to Regular Expressions](#Part-4---Intro-to-Regular-Expressions)
-- [Part 5 - Docs and Repos](#Part-5---Docs-and-Repos)
-- [Extra Credit - Colorize Me, Captain](#Extra-Credit---Colorize-Me,-Captain)
+- [Part 1 - AWS Academy Setup](#Part-1---AWS-Academy-Setup)
+- [Part 2 - git cloning](#Part-2---git-cloning)
+- [Part 3 - ssh config](#Part-3---ssh-config)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
@@ -17,6 +14,9 @@ For each part below, you will be asked to do an action or answer a question. The
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
 ## Part 1 - AWS Academy Setup
+
+An email was sent to your wright.edu account inviting your join AWS Academy.  
+Follow the instructions in [AWS Academy](AWSAcademy.md) to set up your AWS instance.
 
 ## Part 2 - git cloning
 
@@ -29,11 +29,32 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 5. In the `Lab02` folder, create a file named `Lab02.md`
 6. Paste the contents of the [LabTemplate.md](LabTemplate.md) into this file
 7. `add` `Lab02.md` for tracking, `commit` changes as you go, and `push` to synchronize with GitHub
+8. Fill in the Part 2 Answers with the command(s) to do the requested action.
 
 - **Resources:**
-- [GitHub Classrooms - How to Use](GitHubClassrooms.md)
+- [GitHub Classrooms - How to Use](../../GitHubClassrooms.md)
+- [GitHub - Generating a New SSH Key](https://docs.github.com/en/enterprise-server@3.3/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+- [GitHub - Adding SSH key to your GitHub Account](https://docs.github.com/en/enterprise-server@3.0/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
 ## Part 3 - ssh config
+
+On your local system, you used an SSH command to log on to your AWS Ubuntu instance.
+
+1. Write the command you used to `ssh` in to your AWS instance.
+2. Provide the HostName (IP address) of your AWS Ubuntu instance:
+3. Provide the user name that you are logging on to the system with:
+4. Provide the absolute / full path to the private key (Identity File) on your local system:
+5. On your local system, edit `~/.ssh/config` to contain an entry with information about logging on to your AWS Ubuntu instance.
+
+```
+Paste your config file entry here
+```
+
+6. Write the new form of the `ssh` command to connect to your AWS instance.
+
+- **Resources**
+- [linuxize - Using the ssh config file](https://linuxize.com/post/using-the-ssh-config-file/)
+- [cyberciti.biz - config file examples](https://www.cyberciti.biz/faq/create-ssh-config-file-on-linux-unix/)
 
 ## Submission
 
@@ -42,6 +63,8 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## Rubric
 
-- Each part of this lab is worth 2 pts
-- The extra credit is worth 0.5 pts
-  - translates to 5%
+- Submitted Lab 02 answers using the LabTemplate - 1 pts
+- Part 2 - 3 pts total
+  - 1 pt per question
+- Part 3 - 6 pts total
+  - 1 pt per question
