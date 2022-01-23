@@ -28,6 +28,7 @@ Follow the instructions in [AWS Academy](AWSAcademy.md) to set up your AWS insta
 4. In your repo folder, create a folder named `Lab02`
 5. In the `Lab02` folder, create a file named `Lab02.md`
 6. Paste the contents of the [LabTemplate.md](LabTemplate.md) into this file
+   - [Link to raw LabTemplate](https://raw.githubusercontent.com/pattonsgirl/Spring2022-CEG2350/main/Labs/Lab02/LabTemplate.md)
 7. `add` `Lab02.md` for tracking, `commit` changes as you go, and `push` to synchronize with GitHub
 8. Fill in the Part 2 Answers with the command(s) to do the requested action.
 
