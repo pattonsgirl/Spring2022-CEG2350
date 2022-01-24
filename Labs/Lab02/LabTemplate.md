@@ -1,4 +1,4 @@
-## Lab 02 - NOT FINALIZED
+## Lab 02
 
 - Name:
 - Email

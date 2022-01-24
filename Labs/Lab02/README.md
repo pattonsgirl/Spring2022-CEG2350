@@ -1,4 +1,4 @@
-# Lab 02 - NOT FINALIZED
+# Lab 02
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - AWS Academy Setup](#Part-1---AWS-Academy-Setup)
