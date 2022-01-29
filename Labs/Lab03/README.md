@@ -5,13 +5,14 @@
 - [Part 2 - Intro to Scripts](#Part-2---Intro-to-Scripts)
 - [Part 3 - Intro to Regular Expressions](#Part-3---Intro-to-Regular-Expressions)
 - [Part 4 - Docs and Repos](#Part-4---Docs-and-Repos)
+- [Part 5 - .profile and PATH](#Part-5---.profile-and-PATH)
 - [Extra Credit - Colorize Me, Captain](#Extra-Credit---Colorize-Me,-Captain)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
 ## Lab Procedure
 
-Return to [here and select "Start Lab"](https://awsacademy.instructure.com/courses/13249/modules/items/1136419)
+[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/13249/modules/items/1136419)
 
 Use `ssh` to connect to your AWS Ubuntu instance.
 
@@ -60,8 +61,8 @@ This and the following parts are meant to be done in your AWS instance in your `
 2.3
 ```
 
-2. Direct the file `input.txt` into the `sort` command. (1 pt)
-3. Direct the file `input.txt` into the sort command and direct the output to `output.txt`. (1 pt)
+2. Direct the file `input.txt` into the `sort` command.
+3. Direct the file `input.txt` into the sort command and direct the output to `output.txt`.
 
 - **Resources:**
 - [An Intro to Linux IO Redirection](https://www.digitalocean.com/community/tutorials/an-introduction-to-linux-i-o-redirection)
@@ -89,7 +90,7 @@ This and the following parts are meant to be done in your AWS instance in your `
 1. Add an `if` statement to your script that checks if the file in the argument ends in `.txt`
 2. If the file does **not** end in `.txt` your script should exit with an error message: `File extension not allowed`
 
-- Hint: maybe make some other files with other file extension to test your else statement
+- Hint: maybe make some other files with other file extensions to test your conditional statement
 
 - **Resources:**
 - [How to Use Regex in Bash](https://www.poftut.com/how-to-use-regular-expression-regex-in-bash-linux/)
@@ -105,6 +106,22 @@ This and the following parts are meant to be done in your AWS instance in your `
    - `sorting-party`
    - `Lab03.md`
 
+## Part 5 - .profile and PATH
+
+1. What is the value of the `PATH` environment variable?
+
+2. Read through your `~/.profile`. Determine where your binary files and scripts should go in order to be part of the PATH variable. Write the path.
+
+3. Make the folder required in the location required. Write the command(s) used and the full path of the folder.
+
+4. Reload `~/.profile` either with `source` or by closing and opening the terminal. What is the value of the `PATH` environment variable? What was added now vs. in your answer to 1?
+
+5. Copy `sorting-party` into the folder. Write the command(s) used.
+
+6. Modify the permissions so that you can run your script on the command line from any location. Write the modifications needed.
+
+7. In terms of user, group, and other, explain who is allowed to run the script.
+
 ## Extra Credit - Colorize Me, Captain
 
 Colorize the error condition from your script (`File format not allowed`). Maybe go for traditional red? How does purple make you feel? Rainbow and plaid are also welcome to this party.
@@ -118,6 +135,17 @@ Make sure you `commit` and `push` your script changes for grading.
 
 ## Rubric
 
-- Each part of this lab is worth 2 pts
-- The extra credit is worth 0.5 pts
+- Part 1 - 2 pts
+- `sorting-party` script can do the following: (5 pts total)
+  - Reads in a filename as an argument - 1 pt
+  - Sorts the contents of the file given in the argument using the `sort` command - 1 pt
+  - Outputs the sorted data to a file called `sorted.txt` - 1 pt
+  - Condition verifies input file has extension `input.txt` - 1 pt
+  - If condition is not met, error message is output to standard output - 1 pt
+- Part 4 - 2 pts
+  - script usage guide - 1 pt
+  - specificed files exist in `Lab03` folder - 1 pt
+- Part 5 - 3.5 pts total
+  - 0.5 pts each
+- The extra credit is worth 0.625 pts
   - translates to 5%
