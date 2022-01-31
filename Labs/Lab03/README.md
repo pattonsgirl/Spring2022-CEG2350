@@ -61,8 +61,8 @@ This and the following parts are meant to be done in your AWS instance in your `
 2.3
 ```
 
-2. Direct the file `input.txt` into the `sort` command.
-3. Direct the file `input.txt` into the sort command and direct the output to `output.txt`.
+2. Use the `sort` command to sort `input.txt`.
+3. Use the `sort` command to sort `input.txt` and direct the output to `output.txt`.
 
 - **Resources:**
 - [An Intro to Linux IO Redirection](https://www.digitalocean.com/community/tutorials/an-introduction-to-linux-i-o-redirection)
