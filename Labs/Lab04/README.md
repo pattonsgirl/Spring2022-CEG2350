@@ -27,7 +27,7 @@ For each part below, you will be asked to do an action or answer a question. The
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
-## Part 1 - Regular Expressions
+## Part 1 - regex
 
 - **Useful commands for this part: `apt`, `find`, `wc`, `|`, `grep`, `egrep`**
 
@@ -54,7 +54,13 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 - **Resources**
 - [RegEx Cheatsheet](http://web.mit.edu/hackl/www/lab/turkshop/slides/regex-cheatsheet.pdf)
 
-## Part 3 - Parsing Data
+## Part 2 - grep
+
+## Part 3 - sed
+
+## Part 4 - awk
+
+## Part 5 - Parsing Data
 
 There are all sort of reasons to automate tasks. Some I do every semester including getting a list of all of your names and emails, then parsing it for only the emails so that I can make accounts for you on different systems (GitHub Classrooms and AWS Educate).
 
