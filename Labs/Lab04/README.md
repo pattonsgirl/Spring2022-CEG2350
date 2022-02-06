@@ -56,6 +56,22 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## Part 2 - grep
 
+`grep` is a handy command to find patterns in text. `egrep` is `grep`, but allows for extended regex patterns. If a regex search with `grep` is misbehaving, you may need to use `grep -e` or `egrep`
+
+```
+grep [OPTIONS] PATTERN [FILE...]
+```
+
+Create a file named `grepdata.txt` in your `Lab04` folder. Put the contents of [grepdata.txt](grepdata.txt) in the file. Use `grep` or `egrep` to complete the searches below. Only write the command that makes the required match. DO NOT paste the results.
+
+1. Print all lines that contain a phone number with an extension (the letter x or X followed by four digits).
+2. Print all lines that begin with three digits followed by a blank.
+   - Your answer must use the \{ and \} repetition specifier.
+3. Print all lines that contain a date.
+   - Hint: this is a very simple pattern. It does not have to work for any year before 2000.
+4. Print all lines that contain CA in either uppercase or lowercase.
+5. Print all lines that contain an email address (they have an @ in them), preceded by the line number.
+
 ## Part 3 - sed
 
 ## Part 4 - awk
