@@ -74,7 +74,26 @@ Create a file named `grepdata.txt` in your `Lab04` folder. Put the contents of [
 
 ## Part 3 - sed
 
+`sed` is mostly commonly used as a search and replace command. In `sedfile.html` you'll find a simple html file. But we want to change it into markdown. Your task is to do this only using `sed` commands. Your fixed file should be named `sedfile.md`.
+
+1. Remove all html end tags - anything with </stuff>
+2. Replace all <li> tags and the whitespace before the tag with the markdown format for a bullet point: `- `
+   - Note that is a dash followed by a single space
+3. Replace <h1> tags with markdown for header tags: `# `
+   - Note that is a hashtag followed by a single space
+4. Replace <h1> tags with markdown for header tags: `## `
+   - Note that is TWO hashtags followed by a single space
+5. Remove the <ul> tags & remove the <html> tag
+6. Due to a typo, replace the word `Batches` with the word `Matches`
+
 ## Part 4 - awk
+
+## Extra Credit
+
+Use any of the tools above to complete the following challenges
+
+1. In `grepdata.txt`, surround the first three digits of each phone number with parenthesis.
+   - https://linuxize.com/post/how-to-use-sed-to-find-and-replace-string-in-files/
 
 ## Part 5 - Parsing Data
 
