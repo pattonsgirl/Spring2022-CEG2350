@@ -69,7 +69,7 @@ Only write the command that performs the required task. DO NOT paste the results
    - Note that is a dash followed by a single space
 3. Replace `<h1>` tags with markdown for header tags: `# `
    - Note that is a hashtag followed by a single space
-4. Replace `<h1>` tags with markdown for header tags: `## `
+4. Replace `<h2>` tags with markdown for header tags: `## `
    - Note that is TWO hashtags followed by a single space
 5. Remove the `<ul>` tags & remove the `<html>` tag
 6. Replace the word `Batches` with the word `Matches`
