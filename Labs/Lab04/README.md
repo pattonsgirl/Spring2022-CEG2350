@@ -96,13 +96,6 @@ Only write the command that performs the required task. DO NOT paste the results
 - [linuxize - awk with examples](https://linuxize.com/post/awk-command/)
 - [cyberbiz - awk find and replace](https://www.cyberciti.biz/faq/awk-find-and-replace-fields-values/)
 
-## Extra Credit
-
-Use any of the tools above to complete the following challenges
-
-1. In `grepdata.txt`, surround the first three digits of each phone number with parenthesis.
-   - https://linuxize.com/post/how-to-use-sed-to-find-and-replace-string-in-files/
-
 ## Submission
 
 1. Verify that your GitHub repo has a `Lab04` folder with at minimum:
