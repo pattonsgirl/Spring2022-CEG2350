@@ -1,6 +1,7 @@
 # Lab 04 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
+- [regex resources](#regex-resources)
 - [Part 1 - grep](#Part-1---grep)
 - [Part 2 - sed](#Part-2---sed)
 - [Part 3 - awk](#Part-3---awk)
@@ -26,6 +27,13 @@ Some questions will need you to write anwers in `Lab04.md` the [LabTemplate.md i
 For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
+
+## regex resources
+
+- [Mozilla - regex cheatsheet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet)
+- [regexone - practice regex patterns](https://regexone.com/)
+- [regex101 - test regex patterns](https://regex101.com/)
+- [rubular - test regex patterns](https://rubular.com/)
 
 ## Part 1 - grep
 
