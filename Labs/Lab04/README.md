@@ -64,14 +64,14 @@ I recommend using `sed` without modifying the file at first - once you know your
 
 Only write the command that performs the required task. DO NOT paste the results.
 
-1. Remove all html end tags - anything with </stuff>
-2. Replace all <li> tags and the whitespace before the tag with the markdown format for a bullet point: `- `
+1. Remove all html end tags - anything with `</stuff>`
+2. Replace all `<li>` tags and the whitespace before the tag with the markdown format for a bullet point: `- `
    - Note that is a dash followed by a single space
-3. Replace <h1> tags with markdown for header tags: `# `
+3. Replace `<h1>` tags with markdown for header tags: `# `
    - Note that is a hashtag followed by a single space
-4. Replace <h1> tags with markdown for header tags: `## `
+4. Replace `<h1>` tags with markdown for header tags: `## `
    - Note that is TWO hashtags followed by a single space
-5. Remove the <ul> tags & remove the <html> tag
+5. Remove the `<ul>` tags & remove the `<html>` tag
 6. Replace the word `Batches` with the word `Matches`
 
 - **Resources**
