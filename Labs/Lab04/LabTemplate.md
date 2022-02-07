@@ -6,19 +6,27 @@
 ## Part 1 Answers
 
 1.
-2. - Location:
+2.
 3.
-4. Command:
-   - Number of matching words:
-5. Command:
-   - Number of matching words:
-6. Command:
-   - Number of matching words:
-7. Command:
-   - Number of matching words:
+4.
+5.
+
+## Part 2 Answers
+
+1.
+2.
+3.
+4.
+5.
+6.
 
 ## Part 3 Answers
 
-1-3 - verify `parser` is here in your Lab 04 folder.
-
+1.
+2.
+3.
 4.
+5.
+6.
+
+## Part 3 Answers

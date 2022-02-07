@@ -50,9 +50,11 @@ Create a file named `grepdata.txt` in your `Lab04` folder. Put the contents of [
 
 ## Part 2 - sed
 
-`sed` is mostly commonly used as a search and replace command. In `sedfile.html` you'll find a simple html file. But we want to change it into markdown. Your task is to do this only using `sed` commands. Your fixed file should be named `sedfile.md`.
+`sed` is mostly commonly used as a search and replace command. In [sedfile.html](sedfile.html) you'll find a simple html file. But we want to change it into markdown. Your task is to do this only using `sed` commands. Your fixed file should be named `sedfile.md`.
 
-I recommend using `sed` without modifying the file at first - once you no your replacement patterns work, then edit in place.
+I recommend using `sed` without modifying the file at first - once you know your replacement patterns work, then edit the file.
+
+Only write the command that performs the required task. DO NOT paste the results.
 
 1. Remove all html end tags - anything with </stuff>
 2. Replace all <li> tags and the whitespace before the tag with the markdown format for a bullet point: `- `
@@ -69,7 +71,22 @@ I recommend using `sed` without modifying the file at first - once you no your r
 
 ## Part 3 - awk
 
-`awk` is a full blown scripting language dedicated to text manipulation.
+`awk` is a full blown scripting language dedicated to text manipulation. Create a file in your `Lab04` folder named `records.txt`. Put the contents of [records.txt](records.txt) in your file, and do the following tasks using `awk`
+
+Only write the command that performs the required task. DO NOT paste the results.
+
+1. Print only first names that start with `Bil`
+2. Print only the email addresses of records whose favorite number is 42
+3. For users who have a `wright.edu` email, print only their last name, first name, and email in the following format:
+   - `Last, First: Email`
+4. For users who have a `wright.edu` email AND have a password of `1234`, print only their last name and favorite number in the following format:
+   - `Last favorite number is: #`
+5. Replace emails from domain `space.edu` with `universe.edu`. Write all records to `update1.txt`
+6. Replace all passwords with `N0T@PL@!NP@$$W0RD`. Write all records to `update2.txt`
+
+- **Resources**
+- [linuxize - awk with examples](https://linuxize.com/post/awk-command/)
+- [cyberbiz - awk find and replace](https://www.cyberciti.biz/faq/awk-find-and-replace-fields-values/)
 
 ## Extra Credit
 
@@ -85,6 +102,9 @@ Use any of the tools above to complete the following challenges
    - `grepdata.txt`
    - `sedfile.html`
    - `sedfile.md`
+   - `records.txt`
+   - `update1.txt`
+   - `update2.txt`
    - `Lab04.md`
 
 2. In the Pilot Dropbox, paste the URL to the `Lab04` folder in your GitHub repo
