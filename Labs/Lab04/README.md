@@ -81,6 +81,12 @@ Only write the command that performs the required task. DO NOT paste the results
 
 `awk` is a full blown scripting language dedicated to text manipulation. Create a file in your `Lab04` folder named `records.txt`. Put the contents of [records.txt](records.txt) in your file, and do the following tasks using `awk`
 
+`records.txt` contains the following fields:
+
+```
+first last email fav_number university password
+```
+
 Only write the command that performs the required task. DO NOT paste the results.
 
 1. Print only first names that start with `Bil`
