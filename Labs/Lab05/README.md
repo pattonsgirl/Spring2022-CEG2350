@@ -51,8 +51,7 @@ For example, my laptop does not have a dedicated gpu card. I can run commands wh
    - C partition for Windows users
    - / partition for Linux / Mac(?) users
 8. BIOS mode / version
-9. Note whether or not your BIOS / UEFI is accessible, and what steps shoud let you access it.
-10. ~~System bootloader and location~~ removed 9/29
+9. Note whether or not your BIOS / UEFI is accessible, and what steps should let you access it.
 
 ## Part 2 - AWS Instance Exploration
 
@@ -74,13 +73,12 @@ For example, this system does not have a dedicated gpu card. I can run commands 
 6. Remaining disk space (translate to GB)
 7. File system used on primary partition
    - Focus on the ID column - https://www.win.tue.nl/~aeb/partitions/partition_types-1.html
-8. ~~System bootloader and location~~ - removed 9/29
 
 ## Part 3 - Info Finder
 
-You could see that manually raoming around tracking down system information could be clunky over enough time over enough systems. So, we are going to focus on the important bits via a script.
+You could see that manually roaming around tracking down system information could be clunky over enough time and across enough systems. So, we are going to focus on the important bits via a script.
 
-You have also noticed that some of these commands only run as a certian user (or with certian user priviledges)
+You have also noticed that some of these commands only run as a certian user (or with certian user privileges)
 
 1. Check out the list of commands in [command-list.txt](command-list.txt)
 2. Create a script in your Lab05 folder named `sys-info`. Give the script appropriate permissions to be executable.
