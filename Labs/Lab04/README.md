@@ -51,7 +51,7 @@ Create a file named `grepdata.txt` in your `Lab04` folder. Put the contents of [
    - Your answer must use the \{ and \} repetition specifier.
 3. Print all lines that contain a date after the year 2000.
 4. Print all lines that contain CA in either uppercase or lowercase.
-5. Print all lines that contain an email address (they have an @ in them), preceded by the line number.
+5. Print all lines that contain an email address (they have an @ in them), preceded by the line number (as in which line the match occured on).
 
 - **Resources**
 - [linuxize - use grep to search patterns](https://linuxize.com/post/how-to-use-grep-command-to-search-files-in-linux/)
