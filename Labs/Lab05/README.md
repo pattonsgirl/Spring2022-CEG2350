@@ -74,7 +74,7 @@ For example, this system does not have a dedicated gpu card. I can run commands 
 ## Part 3 - Bulk Renamer
 
 1. Download and run [this script](createfiles.sh). It will generate some dummy files for this part.
-2. Create a script in your `Lab05` folder named `bulkrename` that meets the following specifications. The script will run as: `./bulkrename -f findstring -r replacestring files`
+2. Create a script in your `Lab05` folder named `bulkrename` that meets the following specifications. The script will run as: `bulkrename -f find -r replace FILES_TO_RENAME*`
    - Note: files could be all files in a folder, for example: `~/folder/*`
 3. Use `getopts` to utilize both arguments and functions.
    - `-r` = what to replace in the filename string. Should have an argument after, save to a variable
