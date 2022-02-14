@@ -36,6 +36,4 @@
 
 Verify the following files associated with this part are in your repo
 
-- `sys-info`
-- `basic-system-report.txt` (or the ec version of report name)
-- `full-system-report.txt` (or the ec version of report name)
+- `bulkrename`

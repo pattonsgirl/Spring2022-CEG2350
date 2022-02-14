@@ -3,12 +3,9 @@
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Self Discovery](#Part-1---Self-Discovery)
 - [Part 2 - AWS Instance Exploration](#Part-2---AWS-Instance-Exploration)
-- [Part 3 - Info Finder](#Part-3---Info-Finder)
-- [Extra Credit - `date` stamp](#Extra-Credit---`date`-stamp)
+- [Part 3 - Bulk Renamer](#Part-3---Bulk-Renamer)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
-
-## Lab Procedure
 
 ## Lab Procedure
 
@@ -93,7 +90,7 @@ Usage: bulkrename -f find -r replace FILES_TO_RENAME*
 
 5. If `-r` or `-f` have empty (no) arguments after them, output "User must provide string for find and string for replace" following by the usage guide in the `printHelp` function
 
-6. For each file given, create a new filename using `sed` to replace the match in the filename string with what to replace. Use `mv` to change the filename to the new filename. Include a useful output statement to see what changed.
+6. For each file given, create a new filename using `sed` to replace the match in the filename string with the supplied replacement. Use `mv` to change the filename to the new filename. Include a useful output statement to see what changed.
 
 ```
 # Hint:
