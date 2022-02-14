@@ -7,7 +7,7 @@
 
 Verify the following is in your `Lab05` folder in GitHub
 
-- `bulkrename`
+- `namechange`
 
 ## Part 2 Answers
 

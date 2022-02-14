@@ -34,7 +34,7 @@ If you did something "wrong" make a note of it in your lab. These are learning e
      - `jpg` is mispelled as `jgp`
      - spaces in file names that could be replaced with `-`
      - files with `foo` in them need to become `bar`
-2. Create a script in your `Lab05` folder named `bulkrename` that meets the following specifications. The script will run as: `bulkrename -f find -r replace FILES_TO_RENAME*`
+2. Create a script in your `Lab05` folder named `namechange` that meets the following specifications. The script will run as: `namechange -f find -r replace FILES_TO_RENAME*`
    - Note: files could be all files in a folder, for example: `~/folder/*`
 3. Use `getopts` to utilize both arguments and functions.
    - `-r` = what to replace in the filename string. Should have an argument after, save to a variable
@@ -43,7 +43,7 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 4. Create a function called `printHelp`. `printHelp` should output the following:
 
 ```
-Usage: bulkrename -f find -r replace FILES_TO_RENAME*
+Usage: namechange -f find -r replace FILES_TO_RENAME*
  -f The text to find in the filename
  -r The replacement text for the new filename
 ```
@@ -115,7 +115,7 @@ For example, this system does not have a dedicated gpu card. I can run commands 
 1. Verify that your GitHub repo has a `Lab05` folder with at minimum:
 
    - `Lab05.md`
-   - `bulkrename`
+   - `namechange`
 
 2. In the Pilot Dropbox, paste the URL to the `Lab05` folder in your GitHub repo
    - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab05
