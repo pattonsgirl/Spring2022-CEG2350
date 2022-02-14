@@ -30,6 +30,10 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 ## Part 1 - Bulk Renamer
 
 1. Download and run [this script](createfiles.sh). It will generate some dummy files for this part.
+   - Errors in these file names that can be corrected with a script:
+     - `jpg` is mispelled as `jgp`
+     - spaces in file names that could be replaced with `-`
+     - files with `foo` in them need to become `bar`
 2. Create a script in your `Lab05` folder named `bulkrename` that meets the following specifications. The script will run as: `bulkrename -f find -r replace FILES_TO_RENAME*`
    - Note: files could be all files in a folder, for example: `~/folder/*`
 3. Use `getopts` to utilize both arguments and functions.

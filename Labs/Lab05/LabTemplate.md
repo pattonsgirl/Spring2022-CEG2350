@@ -1,9 +1,15 @@
-## Lab 05 - NOT FINALIZED
+## Lab 05
 
 - Name:
 - Email
 
 ## Part 1 Answers
+
+Verify the following is in your `Lab05` folder in GitHub
+
+- `bulkrename`
+
+## Part 2 Answers
 
 1.
 2.
@@ -15,7 +21,7 @@
 8.
 9.
 
-## Part 2 Answers
+## Part 3 Answers
 
 1. Where / how info was found:
    - Answer:
@@ -31,9 +37,3 @@
    - Answer:
 7. Where / how info was found:
    - Answer:
-
-## Part 3 Answers
-
-Verify the following files associated with this part are in your repo
-
-- `bulkrename`
