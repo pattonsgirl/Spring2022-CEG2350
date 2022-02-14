@@ -8,7 +8,7 @@ John Jacob jacob.89@wright.edu 90 SCC password
 Sarah Connor connor.99@wright.edu 54 OU 1234
 James Holden holden.98@space.edu 42 UT password
 Todd Tavern tavern.23@bar.com 42 BG password
-James Pumpkin pumpkin@farm.com 44 SCC cr3@te password
+James Pumpkin pumpkin@farm.com 44 SCC cr3@te
 Casey Abrams casey.abrams@wright.edu 22  WSU 1234
 Commander Zavala zavala@indeed.com 90 SCC password
 Steven Hawkings hawkings.51@wright.edu 54 OSU password
