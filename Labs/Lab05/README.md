@@ -1,9 +1,9 @@
 # Lab 05 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - Self Discovery](#Part-1---Self-Discovery)
-- [Part 2 - AWS Instance Exploration](#Part-2---AWS-Instance-Exploration)
-- [Part 3 - Bulk Renamer](#Part-3---Bulk-Renamer)
+- [Part 1 - Bulk Renamer](#Part-1---Bulk-Renamer)
+- [Part 2 - Self Discovery](#Part-2---Self-Discovery)
+- [Part 3 - AWS Instance Exploration](#Part-3---AWS-Instance-Exploration)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
@@ -27,51 +27,7 @@ For each part below, you will be asked to do an action or answer a question. The
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
-## Part 1 - Self Discovery
-
-Find out the following information about your personal system. Write the answers to the information requested. Part of this is learning about your system, so some info will not be findable. Provide confirmation of your findings where possible.
-
-For example, my laptop does not have a dedicated gpu card. I can run commands whose output will confirm there is no GPU
-
-- You can use the manufactuers website / manuals
-- Windows users, I recommend `msinfo`
-- You should _not_ need to install additional programs to find this information. If someone tells you to install something, run away.
-
-1. CPU brand, number of cores, and number of logical cores
-2. Physical memory size (translate to GB)
-3. Virtual memory size (translate to GB)
-   - Does your system have a pagefile, and if so where is it?
-4. Disk type / model
-5. Disk size (translate to GB)
-6. Remaining disk space (translate to GB)
-7. File system used on primary partition
-   - C partition for Windows users
-   - / partition for Linux / Mac(?) users
-8. BIOS mode / version
-9. Note whether or not your BIOS / UEFI is accessible, and what steps should let you access it.
-
-## Part 2 - AWS Instance Exploration
-
-Use your AWS / Ubuntu system to discover the following information. Part of this is learning about a system, so some info will not be findable. Provide confirmation of your findings where possible.
-
-For example, this system does not have a dedicated gpu card. I can run commands whose output will confirm there is no GPU
-
-- **Useful commands for this part: `lscpu`, `free`, `vmstat`, `lsblk`, `df`, `fdisk --list`**
-
-1. CPU brand, number of cores, and number of logical cores
-2. Physical memory size (translate to GB)
-3. Virtual memory size (translate to GB)
-   - Does your system have a pagefile, and if so where is it?
-   - https://phoenixnap.com/kb/linux-commands-check-memory-usage
-4. Disk type / model
-   - https://www.cyberciti.biz/faq/find-hard-disk-hardware-specs-on-linux/
-   - https://askubuntu.com/questions/166083/what-is-the-dev-xvda1-device
-5. Disk size (translate to GB)
-6. Remaining disk space (translate to GB)
-7. File system used on primary partition
-   - Focus on the ID column - https://www.win.tue.nl/~aeb/partitions/partition_types-1.html
-
-## Part 3 - Bulk Renamer
+## Part 1 - Bulk Renamer
 
 1. Download and run [this script](createfiles.sh). It will generate some dummy files for this part.
 2. Create a script in your `Lab05` folder named `bulkrename` that meets the following specifications. The script will run as: `bulkrename -f find -r replace FILES_TO_RENAME*`
@@ -103,6 +59,52 @@ done
 - **Resources**
 - [`getopts` examples](https://linuxhint.com/bash_getopts_example/)
 - [`sed` with string, not input file](https://stackoverflow.com/questions/13055889/sed-with-literal-string-not-input-file)
+- [linuxize - functions](https://linuxize.com/post/bash-functions/)
+- [linuxize - for loops](https://linuxize.com/post/bash-for-loop/)
+
+## Part 2 - Self Discovery
+
+Find out the following information about your personal system. Write the answers to the information requested. Part of this is learning about your system, so some info will not be findable. Provide confirmation of your findings where possible.
+
+For example, my laptop does not have a dedicated gpu card. I can run commands whose output will confirm there is no GPU
+
+- You can use the manufactuers website / manuals
+- Windows users, I recommend `msinfo`
+- You should _not_ need to install additional programs to find this information. If someone tells you to install something, run away.
+
+1. CPU brand, number of cores, and number of logical cores
+2. Physical memory size (translate to GB)
+3. Virtual memory size (translate to GB)
+   - Does your system have a pagefile, and if so where is it?
+4. Disk type / model
+5. Disk size (translate to GB)
+6. Remaining disk space (translate to GB)
+7. File system used on primary partition
+   - C partition for Windows users
+   - / partition for Linux / Mac(?) users
+8. BIOS mode / version
+9. Note whether or not your BIOS / UEFI is accessible, and what steps should let you access it.
+
+## Part 3 - AWS Instance Exploration
+
+Use your AWS / Ubuntu system to discover the following information. Part of this is learning about a system, so some info will not be findable. Provide confirmation of your findings where possible.
+
+For example, this system does not have a dedicated gpu card. I can run commands whose output will confirm there is no GPU
+
+- **Useful commands for this part: `lscpu`, `free`, `vmstat`, `lsblk`, `df`, `fdisk --list`**
+
+1. CPU brand, number of cores, and number of logical cores
+2. Physical memory size (translate to GB)
+3. Virtual memory size (translate to GB)
+   - Does your system have a pagefile, and if so where is it?
+   - https://phoenixnap.com/kb/linux-commands-check-memory-usage
+4. Disk type / model
+   - https://www.cyberciti.biz/faq/find-hard-disk-hardware-specs-on-linux/
+   - https://askubuntu.com/questions/166083/what-is-the-dev-xvda1-device
+5. Disk size (translate to GB)
+6. Remaining disk space (translate to GB)
+7. File system used on primary partition
+   - Focus on the ID column - https://www.win.tue.nl/~aeb/partitions/partition_types-1.html
 
 ## Submission
 
@@ -116,6 +118,6 @@ done
 
 ## Rubric
 
-- Part 1 - 1 pt per question - 9 pts total
-- Part 2 - 1 pt per question - 7 pts total
-- Part 3 - 6 pts total
+- Part 1 - 6 pts total
+- Part 2 - 1 pt per question - 9 pts total
+- Part 3 - 1 pt per question - 7 pts total
