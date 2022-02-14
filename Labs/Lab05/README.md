@@ -1,4 +1,4 @@
-# Lab 05 - NOT FINALIZED
+# Lab 05
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Bulk Renamer](#Part-1---Bulk-Renamer)
