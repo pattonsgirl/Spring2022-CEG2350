@@ -74,49 +74,45 @@ For example, this system does not have a dedicated gpu card. I can run commands 
 7. File system used on primary partition
    - Focus on the ID column - https://www.win.tue.nl/~aeb/partitions/partition_types-1.html
 
-## Part 3 - Info Finder
+## Part 3 - Bulk Renamer
 
-You could see that manually roaming around tracking down system information could be clunky over enough time and across enough systems. So, we are going to focus on the important bits via a script.
-
-You have also noticed that some of these commands only run as a certian user (or with certian user privileges)
-
-1. Check out the list of commands in [command-list.txt](command-list.txt)
-2. Create a script in your Lab05 folder named `sys-info`. Give the script appropriate permissions to be executable.
-   - Note: I don't care about PATH knowing where it is
-3. `sys-info` should perform the following tasks:
-   - If the script is run with `sudo` / as `root`, run a full sytstem report using all commands listed in `command-list.txt`
-     - Store the output in a file named `full-system-report.txt`
-   - Else, run only the commands that a regular user can run without `sudo`
-     - Store the output in a file named `basic-system-report.txt`
-
-- Hints:
-  - [Identify sudo use with whoami](https://www.baeldung.com/linux/identify-user-called-by-sudo)
-  - [Have script check user ID](https://www.cyberciti.biz/tips/shell-root-user-check-script.html)
-
-Sample execution:
+1. Download and run [this script](createfiles.sh). It will generate some dummy files for this part.
+2. Create a script in your `Lab05` folder named `bulkrename` that meets the following specifications. The script will run as: `./bulkrename -f findstring -r replacestring files`
+   - Note: files could be all files in a folder, for example: `~/folder/*`
+3. Use `getopts` to utilize both arguments and functions.
+   - `-r` = what to replace in the filename string. Should have an argument after, save to a variable
+   - `-f` = what to find in the filename string. Should have an argument after, save to a variable
+   - `?` = printHelp, a function that has a help guide
+4. Create a function called `printHelp`. `printHelp` should output the following:
 
 ```
-$ ./sys-info
-You get a basic report
-Report saved to basic-system-report.txt
-$ sudo ./sys-info
-Running a full report, sir.
-Report saved to full-system-report.txt
+Usage: bulkrename -f find -r replace FILES_TO_RENAME*
+ -f The text to find in the filename
+ -r The replacement text for the new filename
 ```
 
-## Extra Credit - `date` stamp
+5. If `-r` or `-f` have empty (no) arguments after them, output "User must provide string for find and string for replace" following by the usage guide in the `printHelp` function
 
-- Use the `date` command to make a better filename. Instead of `*-system-report.txt`, the filename should now be `*-system-report-0927.txt`, for example. I'll allow for any use of the `date` command as long as it adds some useful timestamping to the report generation.
-  - Hint: https://www.cyberciti.biz/faq/unix-linux-appleosx-bsd-shell-appending-date-to-filename/
+6. For each file given, create a new filename using `sed` to replace the match in the filename string with what to replace. Use `mv` to change the filename to the new filename. Include a useful output statement to see what changed.
+
+```
+# Hint:
+for file in $@:
+do
+   echo $file
+done
+```
+
+- **Resources**
+- [`getopts` examples](https://linuxhint.com/bash_getopts_example/)
+- [`sed` with string, not input file](https://stackoverflow.com/questions/13055889/sed-with-literal-string-not-input-file)
 
 ## Submission
 
 1. Verify that your GitHub repo has a `Lab05` folder with at minimum:
 
    - `Lab05.md`
-   - `sys-info`
-   - `basic-system-report.txt` (or the ec version of report name)
-   - `full-system-report.txt` (or the ec version of report name)
+   - `bulkrename`
 
 2. In the Pilot Dropbox, paste the URL to the `Lab05` folder in your GitHub repo
    - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab05
@@ -126,7 +122,3 @@ Report saved to full-system-report.txt
 - Part 1 - 1 pt per question - 9 pts total
 - Part 2 - 1 pt per question - 7 pts total
 - Part 3 - 6 pts total
-  - can detect if script is run with sudo / as root - 2 pts
-  - outputs basic report if run as regular user - 2 pt
-  - outputs full report if run with sudo / root priviledges - 2 pt
-- EC - 2.2 pts - 10%
