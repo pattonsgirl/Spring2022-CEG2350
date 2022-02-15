@@ -1,9 +1,10 @@
 # Lab 05
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - Bulk Renamer](#Part-1---Bulk-Renamer)
+- [Part 1 - Name Change](#Part-1---Name-Change)
 - [Part 2 - Self Discovery](#Part-2---Self-Discovery)
 - [Part 3 - AWS Instance Exploration](#Part-3---AWS-Instance-Exploration)
+- [Extra Credit - Bulk Renamer](#Extra-Credit---Bulk-Renamer)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
@@ -27,41 +28,40 @@ For each part below, you will be asked to do an action or answer a question. The
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
-## Part 1 - Bulk Renamer
+## Part 1 - Name Change
 
-1. Download and run [this script](createfiles.sh). It will generate some dummy files for this part.
-   - Errors in these file names that can be corrected with a script:
-     - `jpg` is mispelled as `jgp`
-     - spaces in file names that could be replaced with `-`
-     - files with `foo` in them need to become `bar`
-2. Create a script in your `Lab05` folder named `namechange` that meets the following specifications. The script will run as: `namechange -f find -r replace FILES_TO_RENAME*`
-   - Note: files could be all files in a folder, for example: `~/folder/*`
-3. Use `getopts` to utilize both arguments and functions.
+1. Create a script in your `Lab05` folder named `namechange` that meets the following specifications. The script will run as: `namechange -f find -r replace string-to-modify`
+2. Use `getopts` to utilize both arguments and functions.
+
    - `-r` = what to replace in the filename string. Should have an argument after, save to a variable
    - `-f` = what to find in the filename string. Should have an argument after, save to a variable
    - `?` = printHelp, a function that has a help guide
-4. Create a function called `printHelp`. `printHelp` should output the following:
+
+3. Create a function called `printHelp`. `printHelp` should output the following:
 
 ```
-Usage: namechange -f find -r replace FILES_TO_RENAME*
+Usage: namechange -f find -r replace "string to modify"
  -f The text to find in the filename
  -r The replacement text for the new filename
 ```
 
-5. If `-r` or `-f` have empty (no) arguments after them, output "User must provide string for find and string for replace" following by the usage guide in the `printHelp` function
-
-6. For each file given, create a new filename using `sed` to replace the match in the filename string with the supplied replacement. Use `mv` to change the filename to the new filename. Include a useful output statement to see what changed.
+4. If `-r` or `-f` have empty (no) arguments after them, output "User must provide string for find and string for replace" following by the usage guide in the `printHelp` function
+   - `getopts` has built in ways to handle this checking
+5. For the string given, `string-to-modify`, find the pattern to be replaced and replace it with the pattern requested using `sed` - you may just want to have `sed` use the `-E` option ;)
 
 ```
-# Hint:
-for file in $@:
-do
-   echo $file
-done
+# Sample runs of working script
+
+$ bash namechange -f "\s" -r "-" "hello world"
+hello-world
+
+$ bash namechange -f "er+" -r "error" "spellingerrrr"
+spellingerror
 ```
 
 - **Resources**
-- [`getopts` examples](https://linuxhint.com/bash_getopts_example/)
+- [bash-hackers - `getopts` tutorial](https://wiki.bash-hackers.org/howto/getopts_tutorial)
+- [shellscript - `getopts` tutorial](https://www.shellscript.sh/tips/getopts/)
 - [`sed` with string, not input file](https://stackoverflow.com/questions/13055889/sed-with-literal-string-not-input-file)
 - [linuxize - functions](https://linuxize.com/post/bash-functions/)
 - [linuxize - for loops](https://linuxize.com/post/bash-for-loop/)
@@ -109,6 +109,26 @@ For example, this system does not have a dedicated gpu card. I can run commands 
 6. Remaining disk space (translate to GB)
 7. File system used on primary partition
    - Focus on the ID column - https://www.win.tue.nl/~aeb/partitions/partition_types-1.html
+
+## Extra Credit - Bulk Renamer
+
+This build on the script created for Part 1. Since the core is similar, I would `cp` this to a new script named `bulkrenamer`.
+
+1. Download and run [this script](createfiles.sh). It will generate some dummy files for this part.
+   - Errors in these file names that can be corrected with a script:
+     - `jpg` is mispelled as `jgp`
+     - spaces in file names that could be replaced with `-`
+     - files with `foo` in them need to become `bar`
+2. The script will run as: `bulkrenamer -f find -r replace FILES_TO_RENAME*`
+3. For each file given (or all files in a given folder), create a new filename using `sed` to replace the match in the filename string with the supplied replacement. Use `mv` to change the filename to the new filename. Include a useful output statement to see what changed.
+
+```
+# Hint:
+for file in $@:
+do
+   echo $file
+done
+```
 
 ## Submission
 
