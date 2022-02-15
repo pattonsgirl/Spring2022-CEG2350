@@ -35,7 +35,7 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
    - `-r` = what to replace in the filename string. Should have an argument after, save to a variable
    - `-f` = what to find in the filename string. Should have an argument after, save to a variable
-   - `?` = printHelp, a function that has a help guide
+   - `-?` = printHelp, a function that has a help guide
 
 3. Create a function called `printHelp`. `printHelp` should output the following:
 
