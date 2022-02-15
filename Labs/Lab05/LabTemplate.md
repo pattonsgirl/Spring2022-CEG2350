@@ -20,20 +20,3 @@ Verify the following is in your `Lab05` folder in GitHub
 7.
 8.
 9.
-
-## Part 3 Answers
-
-1. Where / how info was found:
-   - Answer:
-2. Where / how info was found:
-   - Answer:
-3. Where / how info was found:
-   - Answer:
-4. Where / how info was found:
-   - Answer:
-5. Where / how info was found:
-   - Answer:
-6. Where / how info was found:
-   - Answer:
-7. Where / how info was found:
-   - Answer:
