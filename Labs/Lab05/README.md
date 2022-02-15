@@ -52,6 +52,11 @@ Usage: namechange -f find -r replace "string to modify"
 ```
 # Sample runs of working script
 
+$ bash namechange -?
+Usage: namechange -f find -r replace "string to modify"
+ -f The text to find in the filename
+ -r The replacement text for the new filename
+
 $ bash namechange -f "\s" -r "-" "hello world"
 hello-world
 
