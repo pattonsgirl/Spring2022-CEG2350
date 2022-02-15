@@ -3,7 +3,6 @@
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Name Change](#Part-1---Name-Change)
 - [Part 2 - Self Discovery](#Part-2---Self-Discovery)
-- [Part 3 - AWS Instance Exploration](#Part-3---AWS-Instance-Exploration)
 - [Extra Credit - Bulk Renamer](#Extra-Credit---Bulk-Renamer)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
@@ -94,27 +93,6 @@ For example, my laptop does not have a dedicated gpu card. I can run commands wh
 8. BIOS mode / version
 9. Note whether or not your BIOS / UEFI is accessible, and what steps should let you access it.
 
-## Part 3 - AWS Instance Exploration
-
-Use your AWS / Ubuntu system to discover the following information. Part of this is learning about a system, so some info will not be findable. Provide confirmation of your findings where possible.
-
-For example, this system does not have a dedicated gpu card. I can run commands whose output will confirm there is no GPU
-
-- **Useful commands for this part: `lscpu`, `free`, `vmstat`, `lsblk`, `df`, `fdisk --list`**
-
-1. CPU brand, number of cores, and number of logical cores
-2. Physical memory size (translate to GB)
-3. Virtual memory size (translate to GB)
-   - Does your system have a pagefile, and if so where is it?
-   - https://phoenixnap.com/kb/linux-commands-check-memory-usage
-4. Disk type / model
-   - https://www.cyberciti.biz/faq/find-hard-disk-hardware-specs-on-linux/
-   - https://askubuntu.com/questions/166083/what-is-the-dev-xvda1-device
-5. Disk size (translate to GB)
-6. Remaining disk space (translate to GB)
-7. File system used on primary partition
-   - Focus on the ID column - https://www.win.tue.nl/~aeb/partitions/partition_types-1.html
-
 ## Extra Credit - Bulk Renamer
 
 This build on the script created for Part 1. Since the core is similar, I would `cp` this to a new script named `bulkrenamer`.
@@ -141,6 +119,7 @@ done
 
    - `Lab05.md`
    - `namechange`
+   - `bulkrenamer` - for extra credit
 
 2. In the Pilot Dropbox, paste the URL to the `Lab05` folder in your GitHub repo
    - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab05
@@ -148,5 +127,12 @@ done
 ## Rubric
 
 - Part 1 - 6 pts total
+  - `namechanger` exists in repo - 1pt
+  - `getopts` checks for `-r`, `-f`, and `-?` - 1pt
+  - check if arguments for options exist (using `getopts` or another method) - 1pt
+  - `printHelp` function called to print help guide if - 1pt
+    - `-?` is the option
+    - bad usage (no args or bad option)
+  - string given has pattern found and replaced as specified by arguments - 2pts
 - Part 2 - 1 pt per question - 9 pts total
-- Part 3 - 1 pt per question - 7 pts total
+- Extra Credit - 20% - 3pts
