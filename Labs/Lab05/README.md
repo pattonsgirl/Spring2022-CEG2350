@@ -65,10 +65,16 @@ spellingerror
 
 - **Resources**
 - [bash-hackers - `getopts` tutorial](https://wiki.bash-hackers.org/howto/getopts_tutorial)
-- [shellscript - `getopts` tutorial](https://www.shellscript.sh/tips/getopts/)
+- [ostechnix - breaking down how getopts works](https://ostechnix.com/parse-arguments-in-bash-scripts-using-getopts/)
+- [assertnotmagic - breaking down how getopts works](https://www.assertnotmagic.com/2019/03/08/bash-advanced-arguments/)
+  - [shellscript - `getopts` tutorial](https://www.shellscript.sh/tips/getopts/)
 - [`sed` with string, not input file](https://stackoverflow.com/questions/13055889/sed-with-literal-string-not-input-file)
 - [linuxize - functions](https://linuxize.com/post/bash-functions/)
 - [linuxize - for loops](https://linuxize.com/post/bash-for-loop/)
+- Checking for multiple arguments:
+  - getopts : case can only check for a one argument missing case. bash namechanger -r -f​ would not "count" as it would read -f as the next OPTARG and count it as the "argument". Fun right?
+  - So let's use what we have - stored values in variables. And we have an ability to check if those values contain anything... catch my drift? Check out the second answer in this post: https://unix.stackexchange.com/questions/50563/how-can-i-detect-that-no-options-were-passed-with-getopts
+  - There are games you can play within the case statement to do this check, but it's a little clunky. If you're curious: https://stackoverflow.com/questions/43425556/getopts-behaves-not-as-expected-when-option-parameter-is-missing
 
 ## Part 2 - Self Discovery
 
