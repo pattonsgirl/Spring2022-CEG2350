@@ -34,7 +34,7 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
    - `-r` = what to replace in the filename string. Should have an argument after, save to a variable
    - `-f` = what to find in the filename string. Should have an argument after, save to a variable
-   - `-?` = printHelp, a function that has a help guide
+   - `-h` = printHelp, a function that has a help guide
 
 3. Create a function called `printHelp`. `printHelp` should output the following:
 
@@ -51,7 +51,7 @@ Usage: namechange -f find -r replace "string to modify"
 ```
 # Sample runs of working script
 
-$ bash namechange -?
+$ bash namechange -h
 Usage: namechange -f find -r replace "string to modify"
  -f The text to find in the filename
  -r The replacement text for the new filename
