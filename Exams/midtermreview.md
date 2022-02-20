@@ -30,7 +30,7 @@
 
 1. Aliases & customizations (.bashrc, .profile)
 2. Commands: grep, ~~diff~~, find, ~~file~~, wc, sort, uniq, whereis, which
-3. IO redirection (<, >, |, tee)
+3. IO redirection (<, >, |, streams (standard output and error) ~~tee~~)
 4. executing scripts (source, ./, PATH)
 5. Scripting languages: bash
    - variables
