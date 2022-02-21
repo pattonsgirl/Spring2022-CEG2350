@@ -1,3 +1,17 @@
+# Midterm Review for CEG 2350
+
+## Spring 2022
+
+## Da Rules
+
+Midterm: Monday 3/7
+
+- Available 8:00 AM to 11:59 PM
+- 1 attempt, 1 hour and 20 minutes once started
+- Open note, open terminal
+- No class - only exam.
+- I will be in Oelman Hall 320 from 4:40 to 6:00 PM if you want to take the exam in the room
+
 ## Intro topics
 
 1. How did the modern computer come to be?
@@ -29,7 +43,7 @@
 ## Scripting
 
 1. Aliases & customizations (.bashrc, .profile)
-2. Commands: grep, ~~diff~~, find, ~~file~~, wc, sort, uniq, whereis, which
+2. Commands: ~~diff~~, find, ~~file~~, wc, sort, uniq, whereis, which
 3. IO redirection (<, >, |, streams (standard output and error) ~~tee~~)
 4. executing scripts (source, ./, PATH)
 5. Scripting languages: bash
@@ -42,7 +56,7 @@
    - getopts
    - case
 6. Regular expressions
-7. Requiring root to run
+7. grep, sed, and awk
 
 ## Computer Hardware, Boot Process, and Data on Disks:
 
@@ -68,13 +82,6 @@
    - sectors vs blocks vs inodes
    - fragmentation
 
-## Virtual Machines
-
-1. Set of resources virtually "defined"
-2. Resource allocation managed by hypervisor
-3. Can install an operating system to a disk using an iso (machine image)
-4. What can you do in a virtual machine?
-
 ## Git (version control)
 
 1. Git remote (servers) vs. clients (local)
@@ -84,3 +91,10 @@
    - commit
    - push
    - pull
+
+## Virtual Machines (new topic, not on exam)
+
+1. Set of resources virtually "defined"
+2. Resource allocation managed by hypervisor
+3. Can install an operating system to a disk using an iso (machine image)
+4. What can you do in a virtual machine?
