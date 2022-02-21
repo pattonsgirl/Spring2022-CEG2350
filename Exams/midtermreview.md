@@ -79,7 +79,7 @@ Midterm: Monday 3/7
    - MBR vs GPT
    - partitions
    - filesystems
-   - sectors vs blocks vs inodes
+   - ~~sectors vs blocks vs inodes~~
    - fragmentation
 
 ## Git (version control)
