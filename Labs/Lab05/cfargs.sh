@@ -1,8 +1,11 @@
 #!/bin/bash
 # Usage: fsarg.sh 10 spaces .
 # Problems: order matters.  Entering an argument wrong will lead to disaster
+
 echo "$1 files with added mistake of $2 in directory $3"
 
+# should check args have content
+# need to check directory existence
 
 #for i in {1..$1}
 for (( i=0; i<=$1; i++ ))
