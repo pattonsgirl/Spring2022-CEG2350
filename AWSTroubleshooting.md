@@ -19,3 +19,5 @@ Instance is running, when SSH command is run, connection timeout error shown
 - in instance actions, select reboot
 - New IP will be assigned (at least this has been the behavior so far)
 - log in with new IP
+
+## Creating a New Stack
