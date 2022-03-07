@@ -95,7 +95,7 @@ We are going to be adding images directly to GitHub, then using `git pull` to ge
    - type `git pull`
    - you should see your file names appear in the change list
    - and you should now be able to `ls` and see them
-6. In you lab template, you have a line similar to: `![Screenshot of VM running](relative_path_to_filename_here)`
+6. In your lab template, you have a line similar to: `![Screenshot of VM running](relative_path_to_filename_here)`
    - keep the parenthesis, but fill them with the relative path to your respective photos
    - this should be relative to being in your repo folder
 
