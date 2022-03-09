@@ -2,4 +2,4 @@
 
 Here is where I am in installation
 
-![installation pic](installing.png)
+![installation pic](installing.PNG)
