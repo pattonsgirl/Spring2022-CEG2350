@@ -78,7 +78,7 @@ Midterm: Monday 3/7
 4. Disks
    - MBR vs GPT
    - partitions
-   - filesystems
+   - ~~filesystems~~
    - ~~sectors vs blocks vs inodes~~
    - fragmentation
 
@@ -91,10 +91,3 @@ Midterm: Monday 3/7
    - commit
    - push
    - pull
-
-## Virtual Machines (new topic, not on exam)
-
-1. Set of resources virtually "defined"
-2. Resource allocation managed by hypervisor
-3. Can install an operating system to a disk using an iso (machine image)
-4. What can you do in a virtual machine?
