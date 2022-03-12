@@ -11,17 +11,17 @@
 
 The focus of this lab is creating a virtual machine - you are not required to utilize the AWS instance for this lab. You will be creating a `Lab06.md` file for your work in this lab, which will mostly be documentation and screenshots. To create and edit the file, you are welcome to use your AWS instance (or anywhere your repo is cloned) or edit the file directly in the broswer.
 
-IIn your repository (the folder named `ceg2350-yourgithubusername).
+In your repository (the folder named `ceg2350-yourgithubusername):
 
 Create a new directory, `Lab06`
 
 Create a file named `Lab06.md` [based on the template](LabTemplate.md).
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/Spring2021-CEG2350/main/Labs/Lab06/LabTemplate.md)
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/Spring2022-CEG2350/main/Labs/Lab06/LabTemplate.md)
 
 ## Part 1 - Virtualize the Machine
 
-We have been talking about the boot process and computer parts and installing operating systems, but it's hard to give you a computer to build and feel this out - so how about a virtual one!
+We have been talking about the boot process, computer parts, and installing operating systems, but it's hard to give you a computer to build and feel this out - so how about a virtual one!
 
 **Your deliverable is a full write up in `Lab06.md` of every step of creating a VM - from choosing the virtualized hardware to installing an OS.**
 
@@ -38,7 +38,9 @@ You will need a computer that has CPU virtualization enabled. The lab machines &
   - the instuctions below should apply generically, but if you are having trouble post in the general chat on Discord and we will help as we can
 - Windows 11 Users:
   - Try to install VirtualBox, but it has had mixed support in Windows 11
-  - [Enable Hyper-V Manager](https://www.groovypost.com/howto/enable-virtualization-in-windows-11/)
+  - [Enable Hyper-V Manager](https://www.groovypost.com/howto/enable-virtualization-in-windows-11/)  
+
+**Do the following, and write down the steps used in `Lab06.md` Part 1 Answers.**
 
 1. Create a Virtual Machine with the following minimum specifications:
    - Type: Linux
@@ -69,10 +71,12 @@ You will need a computer that has CPU virtualization enabled. The lab machines &
 
 ## Part 2 - Playground
 
-1. In your vm, change your desktop background. Write how you did it
-2. In your vm, open a web browser and go to a neat website (or just Pilot). Write how you did it
-3. In your vm, install VSCode. Write how you did it
-4. In your vm, connect to your AWS instance from your VM. Write how you did it
+**Do the following, and write down the steps used in `Lab06.md` Part 2 Answers**
+
+1. In your vm, change your desktop background.
+2. In your vm, open a web browser and go to a neat website (or just Pilot).
+3. In your vm, install VSCode.
+4. In your vm, connect to your AWS instance from your VM. 
 
 ## Hints - Screenshots and markdown
 
@@ -91,7 +95,7 @@ We are going to be adding images directly to GitHub, then using `git pull` to ge
    - type `git pull`
    - you should see your file names appear in the change list
    - and you should now be able to `ls` and see them
-6. In you lab template, you have line similar to: `![Screenshot of VM running](relative_path_to_filename_here)`
+6. In your lab template, you have a line similar to: `![Screenshot of VM running](relative_path_to_filename_here)`
    - keep the parenthesis, but fill them with the relative path to your respective photos
    - this should be relative to being in your repo folder
 
