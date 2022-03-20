@@ -29,4 +29,4 @@ To enable fullscreen mode in virtual machine you can go to the view table and se
 ![Screenshot of new background](background.png)
 2. Using Firefox on my virtual machine I typed and went to espn.com
 3. To install VSCode I searched for it on Firefox and proceeded to download on to my virtual machine.
-4.
+4. To connect to AWS with my virtual machine I had to vim and create a file for the ceg2350 private key onto my virtual machine. THen change the permissions using Chmod 600. From there I was able to ssh using "ssh -i ceg2350-key.pem ubuntu@54.226.111.65" where I connected to my AWS instance.
