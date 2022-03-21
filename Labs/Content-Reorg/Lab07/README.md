@@ -27,11 +27,11 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 TODO: shorten to commands to make symbolic link, cp, hard link
 
-1. Create a file in your Lab07 folder named `original.txt`. Put some stuff in this file.
+1. Create a file in your Lab07 folder named `original.txt`. Put some stuff in this file - couple sentences, just enough to give it body.
 2. For `original.txt` identify:
    - Command to find info about `original.txt`:
    - inode `original.txt`:
-   - blocks sym link file:
+   - blocks `original.txt`:
    - links `original.txt`:
 3. Create a new folder in `Lab07` called `playground`
 4. In this folder, create a hard link to `original.txt`
