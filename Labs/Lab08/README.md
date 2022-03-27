@@ -67,7 +67,7 @@ For the following exercises, you are going to have two terminals open to your AW
    - Detach from `screen` / `tmux` session:
    - Command to show `screen` / `tmux` sessions:
    - If you close Terminal B, is the screen session with `infinity` still running? Why or why not?
-   - Command / steps to kill the screen session:
+   - Command / steps to kill the `screen` / `tmux` session:
 
 - Resources:
   - [How To Use Bash's Job Control to Manage Foreground and Background Processes](https://www.digitalocean.com/community/tutorials/how-to-use-bash-s-job-control-to-manage-foreground-and-background-processes)

@@ -27,12 +27,12 @@
    - PID of script:
    - Command to kill script via job id:
    - Effects of exiting terminal:
-5. Run `infinity` in a `screen` session
+5. Run `infinity` in a `screen` or `tmux` session
    - Command(s) to run `infinity` in a screen session:
-   - Detach from screen session:
-   - Command to show `screen` sessions:
+   - Detach from `screen` / `tmux` session:
+   - Command to show `screen` / `tmux` sessions:
    - Effects of exiting terminal:
-   - Command / steps to kill the screen session:
+   - Command / steps to kill the `screen` / `tmux` session:
 
 ## Part 3 Answers
 
