@@ -4,7 +4,7 @@
 - [Part 1 - Write Code](#Part-1---Write-Code)
 - [Part 2 - Compile a Program](#Part-2---Compile-a-Program)
 - [Part 3 - Create a Makefile](#Part-3---Create-a-Makefile)
-- [Extra Credit - Dependent](#Extra-Credit---Dependent)
+- [Extra Credit - Dependents](#Extra-Credit---Dependents)
 - [Extra Credit - G@M3R](#Extra-Credit---G@M3R)
 - [Submission](#Submission)
 - [Rubric](#Rubric)

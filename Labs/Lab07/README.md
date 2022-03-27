@@ -29,7 +29,7 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 For each step below, write the answer to the question / prompt and how you found / configured the answer (commands used).
 
-- **Useful Commands: `df`, `gdisk`, `mkfs`, `mount`, `strings`**
+- **Useful Commands: `df`, `lsblk`, `blkid`, `gdisk`, `mkfs`, `mount`, `strings`**
 
 1. What drive letter and partition number are mounted and where are they mounted to?
 2. Is there another drive listed in `/dev/`?
