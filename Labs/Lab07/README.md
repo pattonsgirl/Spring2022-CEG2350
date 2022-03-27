@@ -31,7 +31,7 @@ For each step below, write the answer to the question / prompt and how you found
 
 - **Useful Commands: `df`, `lsblk`, `blkid`, `gdisk`, `mkfs`, `mount`, `strings`**
 
-1. What drive letter and partition number are mounted and where are they mounted to?
+1. What is the currently mounted block device?
 2. Is there another drive listed in `/dev/`?
 3. For the `gdisk` GPT partition table manipulator, find out what the following main menu options do:
    - `p`
