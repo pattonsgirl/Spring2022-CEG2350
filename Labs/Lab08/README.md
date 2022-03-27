@@ -42,7 +42,7 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 For the following exercises, you are going to have two terminals open to your AWS instance, which will be refered to as Terminal A and Terminal B. We can't give terminals names, but we needed some way to say where to run what ;)
 
-- **Useful Commands: `pstree`, `ps`, `kill`, `bg`, `job`, `fg`, `screen`**
+- **Useful Commands: `pstree`, `ps`, `kill`, `bg`, `job`, `fg`, `screen`, `tmux`**
 
 1. Connect to your AWS system in two different terminals. Find the process IDs for each terminal.
    - Command to find the PID:
@@ -62,10 +62,10 @@ For the following exercises, you are going to have two terminals open to your AW
    - PID of script:
    - Command to kill script via job id:
    - If you close Terminal B, is the job still running? Why or why not?
-5. Run `infinity` in a `screen` session
+5. Run `infinity` in a `screen` or `tmux` session
    - Command(s) to run `infinity` in a screen session:
-   - Detach from screen session:
-   - Command to show `screen` sessions:
+   - Detach from `screen` / `tmux` session:
+   - Command to show `screen` / `tmux` sessions:
    - If you close Terminal B, is the screen session with `infinity` still running? Why or why not?
    - Command / steps to kill the screen session:
 
