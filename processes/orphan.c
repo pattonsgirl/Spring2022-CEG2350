@@ -10,6 +10,7 @@ int main()
 	//	parent and child.
 	//	the pid compare determines if code 
 	//	is for parent or child
+	//	if pid == 0, then it is the child proccess.  Else parent
 	if (pid == 0)
 	{
 		printf("Child process reporting:\n");
