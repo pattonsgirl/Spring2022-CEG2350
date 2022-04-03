@@ -26,6 +26,7 @@ int main()
 	else {
 		printf("I am child process, PID %d\n", getpid());
 		printf("I am going to exit, and see if PARENT PID %d notices me", getppid());
+		printf("Use `ps au` in another terminal to see the zombie!");
 		exit(0);
 	}
 	return 0;

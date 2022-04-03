@@ -6,5 +6,6 @@ int main ()
 {
 	printf("Before forking\n");
 	fork();
+	// after fork, both parent and child process have same tasks
 	printf("After forking\n");
 }
