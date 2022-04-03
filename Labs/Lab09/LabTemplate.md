@@ -21,7 +21,7 @@
 
 - Add your Makefile to your Lab09 folder in GitHub
 
-## Extra Credit - Multi-file Answers - Delete the section if not doing :)
+## Extra Credit - Dependent Answers - Delete the section if not doing :)
 
 - In the `ec` folder, add your:
   - source code files

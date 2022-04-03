@@ -4,24 +4,20 @@
 - [Part 1 - Write Code](#Part-1---Write-Code)
 - [Part 2 - Compile a Program](#Part-2---Compile-a-Program)
 - [Part 3 - Create a Makefile](#Part-3---Create-a-Makefile)
-- [Extra Credit - Dependents](#Extra-Credit---Multi-file)
+- [Extra Credit - Dependents](#Extra-Credit---Dependents)
 - [Extra Credit - G@M3R](#Extra-Credit---G@M3R)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
 ## Lab Procedure
 
-[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/13249/modules/items/1136419)
+In your terminal, head to your repository (the folder named `ceg2350-yourgithubusername).
 
-Use `ssh` to connect to your AWS Ubuntu instance.
+Create a new directory, `Lab09`
 
-Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
+Create a file named `Lab09.md` [based on the template](LabTemplate.md).
 
-Create a new directory, `Lab08`
-
-Write anwers in `Lab08.md` the [LabTemplate.md is here](LabTemplate.md).
-
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/Spring2022-CEG2350/main/Labs/Lab08/LabTemplate.md)
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/Fall2021-CEG2350/main/Labs/Lab09/LabTemplate.md)
 
 For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
 
@@ -36,8 +32,8 @@ Use Java or C or C++ to write an echo program. Name your source code file `repea
 - output the captured text back to standard output
 
 - **Additional notes**
-  - Code integrity does not matter - you may work together or use things found on the internet or textbooks. Cite your sources using comments in your code.
-  - You are welcome to use an IDE you are familiar with to write, test, and debug your code, but you'll need to get the source code to a file on your AWS instance for the lab.
+  - Code integrity does not matter - you may work together or use things found on the internet or textbooks. Practice citing your sources using comments in your code.
+  - You are welcome to use an IDE you are familiar with to write test and debug your code, but you'll need to get the source code to a file on your AWS instance for the remainder of the lab.
   - There is some useful C starter code in [this guide](https://www.geeksforgeeks.org/strings-in-c-2/) about halfway down.
     - You'll need to add another print statement before the scan statement to prompt the user to enter a string.
 
@@ -61,7 +57,7 @@ Use Java or C or C++ to write an echo program. Name your source code file `repea
   - [Makefile in C](https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_makefiles.html#C)
   - [Makefile in Java](https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_makefiles.html#java)
 
-## Extra Credit - Multi-file
+## Extra Credit - Dependents
 
 Create a folder in your `Lab09` folder called `ec`. In Java, C or C++, create a multi-file code project.
 
