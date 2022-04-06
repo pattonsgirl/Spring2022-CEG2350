@@ -16,6 +16,7 @@ int main()
 		printf("Child process reporting:\n");
 		printf("Child : Child's PID %d\n", getpid());
 		printf("Child : Parent's PID %d\n", getppid());
+		sleep(500);
 
 	}
 	else
