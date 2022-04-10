@@ -38,6 +38,8 @@ With your PC (not the AWS instance) connected to a network, identify the followi
 5. The gateway address:
 6. The DHCP server address:
 7. The DNS server address:
+8. Identify the route your outbound packets go through in order to access the Internet through your ISP.
+   - Useful commands: `traceroute` / `tracert`, `route`
 
 - Note: These results are going to look boring at home, but interesting on more complex networks, like Wright State. At home you likely have one device (your router) that is the first stop for most requests (DHCP, DNS, and gateway to route traffic to the next stop). On a complex network, you'll see these addresses getting distributed to different devices - there is a device to connect to to request an address and network information (DHCP server), another that is a first stop for DNS resolution, and maybe another that is the gateway address that packets outside the network are forwarded to to find their destination.
 
@@ -48,9 +50,9 @@ For this part, use your PC (not the AWS instance). I have configured a server to
 - **Useful Commands: `nslookup`,`nmap`, `nc`**
 
 1. Does `3.228.104.170` have a hostname?
-2. Scan `3.228.104.170` for open ports. Identify which ports are open and what service is listening on the port.
+2. Scan `3.228.104.170` for open ports. Identify which ports are open.
 3. One of the server ports is hosting a webpage. How can you view the webpage?
-4. Find out what version of SSH `3.228.104.170` is running.
+4. Find out what version of SSH is running on `3.228.104.170`.
 
 - Resources:
 
@@ -58,25 +60,20 @@ For this part, use your PC (not the AWS instance). I have configured a server to
 
 ## Part 3 - Simple server
 
-Perform the following on your AWS instance unless otherwise specified.
+The following will have you run an HTTP web server using a python library.
 
-1. Install `python3` and `pip3`
-2. Go into your GitHub repo folder and run `python3 -m http.server 4141` to start a minimal web server listening on port `4141`. Leave this running in it's own terminal.
+1. On your AWS instance, install `python3` and `pip3`
+2. On your AWS instance, go into your GitHub repo folder and run `python3 -m http.server 4141` to start a minimal web server listening on port `4141`. Leave this running.
    - you'll see why I have you go into a specific folder in a minute...
 3. For your AWS instance, identify:
    - localhost IP:
-   - instance IP:
+   - instance private IP:
    - instance public IP:
-4. Use your browser on your system, and connect to the instance on the port your service is running on.
-5. Peek back at the terminal running the server and answer the following
-
-   - A successful request log:
-   - A breakdown of the meaning:
-
-6. This content is likely something you did not intend to put on the web. So here are where firewalls come into play. Using either `iptables` or the Security Groups on AWS, disallow this port `4141` from being public. Describe what step(s) you took and how you know the port is now blocked.
+4. On your PC, use a web browser to connect to the instance on the port your web server is running on.
+5. Well, neat trick, but this probably isn't something that should be accessible by just anyone (which is what is happening now). Your next step is to use either `iptables` or the Security Groups on AWS, disallow this port `4141` from being public. Describe what step(s) you took and how you know the port is now blocked.
    - For `iptables`, DROP any public addresses 0.0.0.0/0 incoming to port `4141`
-     - Do NOT save these rules. Just type them out - if something breaks, you can reboot and the iptables will be flushed. If you save, well, you could permanently lock yourself out of say, port 22 (SSH)
-   - For Security Groups, if you read through the list of Inbound rules, you'll see one of these rules opens all the ports from any IP
+     - Do **NOT** `save` these rules. Just type them out - if something breaks, you can reboot and the iptables will be flushed. If you `save`, well, you could permanently lock yourself out of say, port 22 (SSH).
+   - For Security Groups, if you read through the list of Inbound rules, you'll see one of these rules opens all the ports from any IP...
 
 ## Part 4 - Get Off My Port
 
