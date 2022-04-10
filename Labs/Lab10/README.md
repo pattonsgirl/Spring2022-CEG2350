@@ -75,7 +75,7 @@ Perform the following on your AWS instance unless otherwise specified.
 
 6. This content is likely something you did not intend to put on the web. So here are where firewalls come into play. Using either `iptables` or the Security Groups on AWS, disallow this port `4141` from being public. Describe what step(s) you took and how you know the port is now blocked.
    - For `iptables`, DROP any public addresses 0.0.0.0/0 incoming to port `4141`
-     - Do NOT save these rules. Just type them out - if something breaks, you can reboot and the iptables will be flushed. If you save, well, you could premanently lock yourself out of say, port 22 (SSH)
+     - Do NOT save these rules. Just type them out - if something breaks, you can reboot and the iptables will be flushed. If you save, well, you could permanently lock yourself out of say, port 22 (SSH)
    - For Security Groups, if you read through the list of Inbound rules, you'll see one of these rules opens all the ports from any IP
 
 ## Part 4 - Get Off My Port
