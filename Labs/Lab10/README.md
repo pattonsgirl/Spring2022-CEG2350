@@ -3,7 +3,7 @@
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Network Discovery](#Part-1---Network-Discovery)
 - [Part 2 - Network Sniffing](#Part-2---Network-Sniffing)
-- [Part 3 - Silly Server](#Part-3---Silly-Server)
+- [Part 3 - Simple Server](#Part-3---Simple-Server)
 - [Part 4 - Get Off My Port](#Part-4---Get-Off-My-Port)
 - [Extra Credit - Message in a Bottle](#Extra-Credit---Message-in-a-Bottle)
 - [Submission](#Submission)
@@ -11,13 +11,17 @@
 
 ## Lab Procedure
 
-In your terminal, head to your repository (the folder named `ceg2350-yourgithubusername).
+[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/13249/modules/items/1136419)
+
+Use `ssh` to connect to your AWS Ubuntu instance.
+
+Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
 
 Create a new directory, `Lab10`
 
 Create a file named `Lab10.md` [based on the template](LabTemplate.md).
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/Fall2021-CEG2350/main/Labs/Lab10/LabTemplate.md)
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/Spring2022-CEG2350/main/Labs/Lab10/LabTemplate.md)
 
 For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
 
@@ -50,7 +54,7 @@ Perform the following on your system in a terminal. I recommend Windows users go
 
 - Resources: [nmap service and version detection](https://nmap.org/book/man-version-detection.html)
 
-## Part 3 - Silly server
+## Part 3 - Simple server
 
 Perform the following on your AWS instance unless otherwise specified.
 

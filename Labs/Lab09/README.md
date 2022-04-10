@@ -11,13 +11,17 @@
 
 ## Lab Procedure
 
-In your terminal, head to your repository (the folder named `ceg2350-yourgithubusername).
+[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/13249/modules/items/1136419)
+
+Use `ssh` to connect to your AWS Ubuntu instance.
+
+Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
 
 Create a new directory, `Lab09`
 
 Create a file named `Lab09.md` [based on the template](LabTemplate.md).
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/Fall2021-CEG2350/main/Labs/Lab09/LabTemplate.md)
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/Spring2022-CEG2350/main/Labs/Lab09/LabTemplate.md)
 
 For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
 
