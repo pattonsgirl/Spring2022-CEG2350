@@ -110,4 +110,4 @@ Proof is documentation on what commands create, how to connect, and any changes 
 
 ## Rubric
 
-- 1 pt per question (19 pts total)
+- 1 pt per question (20 pts total)
