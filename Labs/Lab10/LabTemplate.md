@@ -15,14 +15,11 @@
 
 ## Part 2 Answers
 
-1. Route tracing command with hostname of site:
-   - Hop 1:
-   - Hop 2:
-   - Hop 3:
-   - Hop 4:
-2. Port scan command with hostname of site:
+1. How to find hostname for `3.228.104.170`:
+1. Port scan command:
    - List of ports and services:
-3. Command to find SSH version of AWS instance:
+1. How to view webpage:
+1. Command to find SSH version:
    - Version information:
 
 ## Part 3 Answers

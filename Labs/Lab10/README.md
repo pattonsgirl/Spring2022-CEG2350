@@ -29,7 +29,7 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## Part 1 - Network Discovery
 
-With your PC (not the AWS instance) connected to a network, identify the following information. I give you permission to use GUIs to dig it up, or a terminal on the system (don't use WSL2)
+With your PC (not the AWS instance) connected to a network, identify the following information. I give you permission to use GUIs tools or a terminal on the system (don't use WSL2). You should not download any additional tools.
 
 1. The hostname:
 2. The IP address:
@@ -43,37 +43,37 @@ With your PC (not the AWS instance) connected to a network, identify the followi
 
 ## Part 2 - Network Sniffing
 
-Perform the following on your system in a terminal. I recommend Windows users go with WSL2.
+For this part, use your PC (not the AWS instance). I have configured a server to toy with for this part. The server's IP address is `3.228.104.170`
 
-- **Useful Commands: `traceroute`, `nmap`, `nc`**
+- **Useful Commands: `nslookup`,`nmap`, `nc`**
 
-1. ~~For a website of your choice~~, identify the ip addresses of the first four hops that your packet is sent to.
-2. ~~For a website of your choice~~, scan for open ports. Identify which ports are open and what service is listening on the port.
-3. Using `nmap` or `nc`, find out what version of SSH your AWS instance is running.
-   - Hint: read your output, it is there to help you
+1. Does `3.228.104.170` have a hostname?
+2. Scan `3.228.104.170` for open ports. Identify which ports are open and what service is listening on the port.
+3. One of the server ports is hosting a webpage. How can you view the webpage?
+4. Find out what version of SSH `3.228.104.170` is running.
 
-- Resources: [nmap service and version detection](https://nmap.org/book/man-version-detection.html)
+- Resources:
+
+- [nmap service and version detection](https://nmap.org/book/man-version-detection.html)
 
 ## Part 3 - Simple server
 
 Perform the following on your AWS instance unless otherwise specified.
 
 1. Install `python3` and `pip3`
-2. In your GitHub repo folder, run `python3 -m http.server 4141` to start a minimal web server listening on port `4141`. Leave this running in it's own terminal.
+2. Go into your GitHub repo folder and run `python3 -m http.server 4141` to start a minimal web server listening on port `4141`. Leave this running in it's own terminal.
    - you'll see why I have you go into a specific folder in a minute...
 3. For your AWS instance, identify:
    - localhost IP:
    - instance IP:
    - instance public IP:
-4. Your http server is serving content / listening on port `4141`. Give a description of what content is being served.
-   - **Useful commands: `wget`, `curl`**
-5. Use your browser on your system, and connect to the instance on the port your service is running on.
-6. Peek back at the terminal running the server and answer the following
+4. Use your browser on your system, and connect to the instance on the port your service is running on.
+5. Peek back at the terminal running the server and answer the following
 
    - A successful request log:
    - A breakdown of the meaning:
 
-7. This content is likely something you did not intend to put on the web. So here are where firewalls come into play. Using either `iptables` or the Security Groups on AWS, disallow this port `4141` from being public. Describe what step(s) you took and how you know the port is now blocked.
+6. This content is likely something you did not intend to put on the web. So here are where firewalls come into play. Using either `iptables` or the Security Groups on AWS, disallow this port `4141` from being public. Describe what step(s) you took and how you know the port is now blocked.
    - For `iptables`, DROP any public addresses 0.0.0.0/0 incoming to port `4141`
      - Do NOT save these rules. Just type them out - if something breaks, you can reboot and the iptables will be flushed. If you save, well, you could premanently lock yourself out of say, port 22 (SSH)
    - For Security Groups, if you read through the list of Inbound rules, you'll see one of these rules opens all the ports from any IP
@@ -82,7 +82,7 @@ Perform the following on your AWS instance unless otherwise specified.
 
 A common issue is that a port you want to listen on (run a service on) is already taken by another service / process. Let's use one (of many) ways to find out what service is running and how to kill it. Perform the following on your AWS instance unless otherwise specified.
 
-1. Run `python3 -m http.server 4141` to start a minimal web server listening on port `4141`. Leave this running in it's own terminal.
+1. Run `python3 -m http.server 4242` to start a minimal web server listening on port `4242`. Leave this running in it's own terminal.
    - If this is still running from Part 2, you don't need to do it again - but you would get the exact error we are trying to hunt down! A service is already bound to that port, and you can't run something else there until the first one terminates
 2. In another terminal, use `lsof` to show only the LISTEN[ing] services on the system.
    - Useful commands: `lsof`, `|`, `grep`
@@ -96,7 +96,8 @@ Depending on what you did for part 3, your firewall may need patching to open th
 
 Proof is documentation on what commands create, how to connect, and any changes you needed to make to your firewall.
 
-Hint: [Netcat nc command with examples](https://linuxize.com/post/netcat-nc-command-with-examples/)
+- Hint:
+- [Netcat nc command with examples](https://linuxize.com/post/netcat-nc-command-with-examples/)
 
 ## Submission
 
@@ -109,4 +110,4 @@ Hint: [Netcat nc command with examples](https://linuxize.com/post/netcat-nc-comm
 
 ## Rubric
 
-- 1 pt per question (20 pts total)
+- 1 pt per question (19 pts total)
