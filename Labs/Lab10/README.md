@@ -63,15 +63,15 @@ For this part, use your PC (not the AWS instance). I have configured a server to
 The following will have you run an HTTP web server using a python library.
 
 1. On your AWS instance, install `python3` and `pip3`
-2. On your AWS instance, go into your GitHub repo folder and run `python3 -m http.server 4141` to start a minimal web server listening on port `4141`. Leave this running.
+2. On your AWS instance, go into your GitHub repo folder and run `python3 -m http.server 5000` to start a minimal web server listening on port `5000`. Leave this running.
    - you'll see why I have you go into a specific folder in a minute...
 3. For your AWS instance, identify:
    - localhost IP:
    - instance private IP:
    - instance public IP:
 4. On your PC, use a web browser to connect to the instance on the port your web server is running on.
-5. Well, neat trick, but this probably isn't something that should be accessible by just anyone (which is what is happening now). Your next step is to use either `iptables` or the Security Groups on AWS, disallow this port `4141` from being public. Describe what step(s) you took and how you know the port is now blocked.
-   - For `iptables`, DROP any public addresses 0.0.0.0/0 incoming to port `4141`
+5. Well, neat trick, but this probably isn't something that should be accessible by just anyone (which is what is happening now). Your next step is to use either `iptables` or the Security Groups on AWS, disallow this port `5000` from being public. Describe what step(s) you took and how you know the port is now blocked.
+   - For `iptables`, DROP any public addresses 0.0.0.0/0 incoming to port `5000`
      - Do **NOT** `save` these rules. Just type them out - if something breaks, you can reboot and the iptables will be flushed. If you `save`, well, you could permanently lock yourself out of say, port 22 (SSH).
    - For Security Groups, if you read through the list of Inbound rules, you'll see one of these rules opens all the ports from any IP...
 
@@ -79,7 +79,7 @@ The following will have you run an HTTP web server using a python library.
 
 A common issue is that a port you want to listen on (run a service on) is already taken by another service / process. Let's use one (of many) ways to find out what service is running and how to kill it. Perform the following on your AWS instance unless otherwise specified.
 
-1. Run `python3 -m http.server 4242` to start a minimal web server listening on port `4242`. Leave this running in it's own terminal.
+1. Run `python3 -m http.server 9000` to start a minimal web server listening on port `9000`. Leave this running in it's own terminal.
    - If this is still running from Part 2, you don't need to do it again - but you would get the exact error we are trying to hunt down! A service is already bound to that port, and you can't run something else there until the first one terminates
 2. In another terminal, use `lsof` to show only the LISTEN[ing] services on the system.
    - Useful commands: `lsof`, `|`, `grep`
