@@ -45,13 +45,14 @@ With your PC (not the AWS instance) connected to a network, identify the followi
 
 ## Part 2 - Network Sniffing
 
-For this part, use your PC (not the AWS instance). I have configured a server to toy with for this part. The server's IP address is `3.228.104.170`
+For this part, I have configured a server to toy with for this part. The server's IP address is `3.228.104.170`
 
 - **Useful Commands: `nslookup`,`nmap`, `nc`**
 
 1. Does `3.228.104.170` have a hostname?
 2. Scan `3.228.104.170` for open ports. Identify which ports are open.
 3. One of the server ports is hosting a webpage. How can you view the webpage?
+   - It's easiest to play with this in your web browser, but `curl` is a fun command to try.
 4. Find out what version of SSH is running on `3.228.104.170`.
 
 - Resources:
@@ -70,7 +71,8 @@ The following will have you run an HTTP web server using a python library.
    - instance private IP:
    - instance public IP:
 4. On your PC, use a web browser to connect to the instance on the port your web server is running on.
-5. Well, neat trick, but this probably isn't something that should be accessible by just anyone (which is what is happening now). Your next step is to use either `iptables` or the Security Groups on AWS, disallow this port `5000` from being public. Describe what step(s) you took and how you know the port is now blocked.
+   Well, neat trick, but this probably isn't something that should be accessible by just anyone (which is what is happening now).
+5. Your next step is to use either `iptables` or the Security Groups on AWS, disallow this port `5000` from being public. Describe what step(s) you took and how you know the port is now blocked.
    - For `iptables`, DROP any public addresses 0.0.0.0/0 incoming to port `5000`
      - Do **NOT** `save` these rules. Just type them out - if something breaks, you can reboot and the iptables will be flushed. If you `save`, well, you could permanently lock yourself out of say, port 22 (SSH).
    - For Security Groups, if you read through the list of Inbound rules, you'll see one of these rules opens all the ports from any IP...
