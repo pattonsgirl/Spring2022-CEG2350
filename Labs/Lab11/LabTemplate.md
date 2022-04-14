@@ -3,6 +3,17 @@
 - Name:
 - Email
 
+## Part 1 Answers
+
+1. Command(s) to install `python3` and `pip3`:
+2. `cd` into repo folder, run `python3 -m http.server 4141`
+3. For AWS instance, identify:
+   - localhost IP:
+   - instance private IP:
+   - instance public IP:
+4. URL:
+5. Firewall implemented:
+
 ## Part 2 Answers
 
 1. `tar` options:
@@ -27,16 +38,6 @@
 4. Command(s):
 
 ## Part 4 Answers:
-
-1. Command:
-2. Command:
-3.
-4.
-5.
-6.
-7.
-
-## Part 5 Answers:
 
 1.
 2.
