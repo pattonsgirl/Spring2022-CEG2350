@@ -26,19 +26,9 @@
 ## Part 3 Answers
 
 1. Command(s) to install `python3` and `pip3`:
-2. `cd` into repo folder, run `python3 -m http.server 4141`
-3. For AWS instance, identify:
-   - localhost IP:
-   - instance private IP:
-   - instance public IP:
-4. URL:
-5. Firewall implemented:
-
-## Part 4 Answers
-
-1. Run web server
-2. Command:
-3. Command:
+3. Run web server
+4. Command:
+5. Command:
 
 ## Extra Credit Answers
 
