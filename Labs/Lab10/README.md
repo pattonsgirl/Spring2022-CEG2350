@@ -3,7 +3,7 @@
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Network Discovery](#Part-1---Network-Discovery)
 - [Part 2 - Network Sniffing](#Part-2---Network-Sniffing)
-- [Part 3 - Get Off My Port](#Part-4---Get-Off-My-Port)
+- [Part 3 - Get Off My Port](#Part-3---Get-Off-My-Port)
 - [Extra Credit - Message in a Bottle](#Extra-Credit---Message-in-a-Bottle)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
