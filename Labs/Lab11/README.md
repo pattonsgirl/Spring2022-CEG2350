@@ -1,10 +1,10 @@
 # Lab 11 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - Fire!(wall)](#Part1---Fire!(wall)]
+- [Part 1 - Fire!wall](##Part1---Fire!wall)
 - [Part 2 - tar it up](##Part-2---tar-it-up)
 - [Part 3 - SFTP](##Part-3---SFTP)
-- [Part 4 - New account - who this](##Part-5---New-account---who-this)
+- [Part 4 - New account - who this](##Part--4--New-account---who-this)
 - [Extra Credit - Solving Conflict](##Extra-Credit---Solving-Conflict)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
@@ -27,7 +27,7 @@ For each part below, you will be asked to do an action or answer a question. The
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
-## Part 1 - Fire!(wall)
+## Part 1 - Fire!wall
 
 The following will have you run an HTTP web server using a python library.
 
