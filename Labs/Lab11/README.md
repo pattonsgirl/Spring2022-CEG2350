@@ -1,10 +1,10 @@
 # Lab 11 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
+- [Part 1 - Fire!(wall)](#Part1---Fire!(wall)]
 - [Part 2 - tar it up](##Part-2---tar-it-up)
 - [Part 3 - SFTP](##Part-3---SFTP)
-- [Part 4 - Install miniconda](##Part-4---Install-miniconda)
-- [Part 5 - New account - who this](##Part-5---New-account---who-this)
+- [Part 4 - New account - who this](##Part-5---New-account---who-this)
 - [Extra Credit - Solving Conflict](##Extra-Credit---Solving-Conflict)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
@@ -26,6 +26,25 @@ Create a file named `Lab11.md` [based on the template](LabTemplate.md).
 For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
+
+## Part 1 - Fire!(wall)
+
+The following will have you run an HTTP web server using a python library.
+
+1. On your AWS instance, install `python3` and `pip3`
+2. On your AWS instance, go into your GitHub repo folder and run `python3 -m http.server 5000` to start a minimal web server listening on port `5000`. Leave this running.
+   - you'll see why I have you go into a specific folder in a minute...
+3. For your AWS instance, identify:
+   - localhost IP:
+   - instance private IP:
+   - instance public IP:
+4. On your PC, use a web browser to connect to the instance on the port your web server is running on.
+   Well, neat trick, but this probably isn't something that should be accessible by just anyone (which is what is happening now).
+5. Your next step is to use either `iptables` or the Security Groups on AWS, disallow this port `5000` from being public. Describe what step(s) you took and how you know the port is now blocked.
+   - For `iptables`, DROP any public addresses 0.0.0.0/0 incoming to port `5000`
+     - Do **NOT** `save` these rules. Just type them out - if something breaks, you can reboot and the iptables will be flushed. If you `save`, well, you could permanently lock yourself out of say, port 22 (SSH).
+   - For Security Groups, if you read through the list of Inbound rules, you'll see one of these rules opens all the ports from any IP...
+
 
 ## Part 2 - tar it up
 
@@ -50,31 +69,8 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 3. Retrieve the tarball from your AWS instance and download it to your local system
 4. Uncompress the tarball to a folder on your system, maybe `2350-archive`
 
-## Part 4 - Install miniconda
 
-Anaconda is a super popular python + common science and machine learning library bundle - it's also quite bulky since we aren't getting into the python deep end. We are going to use miniconda, a lightweight version - from there you could still get more libraries, but the initial install is way smaller.
-
-- **Useful commands: `wget`**
-- **_NOTE: please do NOT put the files for this part in your `Lab11` folder or anywhere near GitHub._**
-
-1. On your AWS instance, download the miniconda installer to your user's home directory
-   - [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)
-2. Compare the sha256sum of your download to the `SHA256SUM` posted on the installation site
-
-- Before installing, I want you to take a look (use `vim` or `less` or `more`) at the installation script (using `cat` will likely crash your current `ssh` connection). Note two things:
-  1.  It starts off as a script: they have menus, if statements, a massive print statement of the license agreement, etc.
-  2.  As you scroll down, you'll start seeing some really weird text that isn't "words"
-      - _Here's why this is cool_: The installation file, it includes all needed base libraries to install Miniconda - offline. There are a chunk of base libraries (as you'll see during the install). These libraries have been tarred and gnu-zipped, the contents of which has been put at the bottom of the install script. This script includes (all in one file) a **tarball payload** so that it doesn't need to contact anything else on the network to finish the install, it just un-zips and un-tars the libraries. This is an example of tarball payload being used for good. This is a good moment to reflect of how tarball payloads could be snuck into an installer for less good.
-
-3. Install miniconda. What does the ending output state you need to do next?
-   - (Do the thing)
-4. What has been added to `PATH`?
-5. Check the current version of `python` when run with `python --version`.
-   - You can also run `python` to start the python interpreter, which will report the version when the interpreter starts.
-6. What does it mean to have `conda` activated (written in Linux at the start of the terminal line)?
-7. How can you deactivate `conda`?
-
-## Part 5 - New account - who this
+## Part 4 - New account - who this
 
 - **Useful commands: `adduser`, `ssh-keygen`, `vim`, `ssh`**
 
@@ -127,8 +123,8 @@ For this extra credit, you are going to create and solve a merge conflict. I'm g
 
 ## Rubric
 
+- Part 1 - 5 pts
 - Part 2 - 4 pts
 - Part 3 - 4 pts
-- Part 4 - 7 pts
-- Part 5 - 4 pts
+- Part 4 - 4 pts
 - Extra Credit - 4 pts (20%)
