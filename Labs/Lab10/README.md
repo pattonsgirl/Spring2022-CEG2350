@@ -63,11 +63,12 @@ For this part, I have configured a server to toy with for this part. The server'
 
 A common issue is that a port you want to listen on (run a service on) is already taken by another service / process. Let's use one (of many) ways to find out what service is running and how to kill it. Perform the following on your AWS instance unless otherwise specified.
 
-1. Run `python3 -m http.server 9000` to start a minimal web server listening on port `9000`. Leave this running in it's own terminal.
+1. On your AWS instance, install `python3` and `pip3`
+2. Run `python3 -m http.server 9000` to start a minimal web server listening on port `9000`. Leave this running in it's own terminal.
    - If this is still running from Part 2, you don't need to do it again - but you would get the exact error we are trying to hunt down! A service is already bound to that port, and you can't run something else there until the first one terminates
-2. In another terminal, use `lsof` to show only the LISTEN[ing] services on the system.
+3. In another terminal, use `lsof` to show only the LISTEN[ing] services on the system.
    - Useful commands: `lsof`, `|`, `grep`
-3. Identify the process ID and `kill` the process.
+4. Identify the process ID and `kill` the process.
 
 ## Extra Credit - Message in a Bottle
 
@@ -91,4 +92,4 @@ Proof is documentation on what commands create, how to connect, and any changes 
 
 ## Rubric
 
-- 1 pt per question (20 pts total)
+- 1 pt per question (16 pts total)
