@@ -3,8 +3,7 @@
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Network Discovery](#Part-1---Network-Discovery)
 - [Part 2 - Network Sniffing](#Part-2---Network-Sniffing)
-- [Part 3 - Simple Server](#Part-3---Simple-Server)
-- [Part 4 - Get Off My Port](#Part-4---Get-Off-My-Port)
+- [Part 3 - Get Off My Port](#Part-4---Get-Off-My-Port)
 - [Extra Credit - Message in a Bottle](#Extra-Credit---Message-in-a-Bottle)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
@@ -59,25 +58,8 @@ For this part, I have configured a server to toy with for this part. The server'
 
 - [nmap service and version detection](https://nmap.org/book/man-version-detection.html)
 
-## Part 3 - Simple server
 
-The following will have you run an HTTP web server using a python library.
-
-1. On your AWS instance, install `python3` and `pip3`
-2. On your AWS instance, go into your GitHub repo folder and run `python3 -m http.server 5000` to start a minimal web server listening on port `5000`. Leave this running.
-   - you'll see why I have you go into a specific folder in a minute...
-3. For your AWS instance, identify:
-   - localhost IP:
-   - instance private IP:
-   - instance public IP:
-4. On your PC, use a web browser to connect to the instance on the port your web server is running on.
-   Well, neat trick, but this probably isn't something that should be accessible by just anyone (which is what is happening now).
-5. Your next step is to use either `iptables` or the Security Groups on AWS, disallow this port `5000` from being public. Describe what step(s) you took and how you know the port is now blocked.
-   - For `iptables`, DROP any public addresses 0.0.0.0/0 incoming to port `5000`
-     - Do **NOT** `save` these rules. Just type them out - if something breaks, you can reboot and the iptables will be flushed. If you `save`, well, you could permanently lock yourself out of say, port 22 (SSH).
-   - For Security Groups, if you read through the list of Inbound rules, you'll see one of these rules opens all the ports from any IP...
-
-## Part 4 - Get Off My Port
+## Part 3 - Get Off My Port
 
 A common issue is that a port you want to listen on (run a service on) is already taken by another service / process. Let's use one (of many) ways to find out what service is running and how to kill it. Perform the following on your AWS instance unless otherwise specified.
 
