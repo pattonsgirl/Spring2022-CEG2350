@@ -93,3 +93,4 @@ Proof is documentation on what commands create, how to connect, and any changes 
 ## Rubric
 
 - 1 pt per question (16 pts total)
+- EC 10% (1.6 pts)
