@@ -1,4 +1,4 @@
-# Lab 11 - NOT FINALIZED
+# Lab 11
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Fire!wall](##Part1---Fire!wall)
@@ -45,7 +45,6 @@ The following will have you run an HTTP web server using a python library.
      - Do **NOT** `save` these rules. Just type them out - if something breaks, you can reboot and the iptables will be flushed. If you `save`, well, you could permanently lock yourself out of say, port 22 (SSH).
    - For Security Groups, if you read through the list of Inbound rules, you'll see one of these rules opens all the ports from any IP...
 
-
 ## Part 2 - tar it up
 
 1. For the `tar` command, write what each option below does:
@@ -68,7 +67,6 @@ The following will have you run an HTTP web server using a python library.
    - `get`
 3. Retrieve the tarball from your AWS instance and download it to your local system
 4. Uncompress the tarball to a folder on your system, maybe `2350-archive`
-
 
 ## Part 4 - New account - who this
 
