@@ -6,7 +6,7 @@
 ## Part 1 Answers
 
 1. Command(s) to install `python3` and `pip3`:
-2. `cd` into repo folder, run `python3 -m http.server 4141`
+2. `cd` into repo folder, run `python3 -m http.server 5000`
 3. For AWS instance, identify:
    - localhost IP:
    - instance private IP:
