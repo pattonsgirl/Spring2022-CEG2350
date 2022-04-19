@@ -222,5 +222,6 @@
 ## Excess Topics - not for studying
 
 - X11 and RDP
-- Network file shares: SFTP, NFS, Samba
+- GPG and PGP
+- Network file shares: NFS, Samba
 - Filesystem differences in terms of implementation
