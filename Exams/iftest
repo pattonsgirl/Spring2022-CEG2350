@@ -1,0 +1,9 @@
+echo "Provide a folder and I'll make you a file!"
+read dir
+
+if [[ -d $dir ]]
+then
+	echo "As promised" > $dir/toldya.txt
+else
+	echo "Directory does not exist"
+fi
