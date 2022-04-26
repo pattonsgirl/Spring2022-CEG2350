@@ -66,9 +66,91 @@ myday: code.c
     gcc -o spring code.c
 ```
 
+- TODO: grade
+
 7. A child process exits, but a parent process has not yet cleaned it up. What process status would the child process have?
 
 - Correct selection: zombie
 - orphan - child process still running (active) but original parent process has exited
 - running - process is currently taking a turn on a CPU core
 - sleeping - process is in a wait state for a turn with a CPU core
+
+8. A installed program takes up space in RAM.
+
+- False. A running **process** takes up space in RAM (memory). An installed program takes up disk space.
+
+9. As part of the boot process, when a computer is turned on the operating system is loaded into RAM
+
+- False. The operating system is a massive amount of files and executables - only some run at a given time. The **kernel** is loaded into RAM.
+
+10. In a cloned git repository, you have created a new file.  
+    Write the steps to synchronize your local changes with GitHub.
+
+```
+git add filename # file needs to be tracked by git
+git commit # text editor will open, enter a message, save and quit
+# OR git commit -m "message here"
+# OR git commit -am "message here" - this one would add files that are already being tracked to the commit
+git push # pushes local commits to GitHub
+```
+
+- TODO: grade
+
+11. I have a new feature I would like to add to my project, which is in a git repository. In terms of git workflow, where should I develop the new feature?
+
+- Correct selection: a new branch
+  - if the feature is an add on to the project, a branch is the best choice. The `main` branch shuold be a working, stable version of the project. Branches should be used for development, patches, and expiriments, that may or may not be merged into `main` at a later time.
+
+12. A pull in git is a combination of what?
+
+- Correct selection: `git fetch` and `git merge`
+  - Content is fetched from remote, then merged with local.
+- `add` and `commit` - there is no combo command for this one, but you _could_ alias it... I wouldn't recommend it ;)
+- `clone` and `checkout` - `clone` is when a remote repo exists, and you want to `clone` a copy to your local machine. `checkout` is to specify branches
+- `commit` and `push` - there is no combo command for this one, but you _could_ alias it... I wouldn't recommend it ;)
+
+13. I have a brand new disk. I plug it into my system as a secondary drive. What needs to be defined in order to use the disk?
+
+- a partition table (to know where partitions are)
+- a partition (one or more to define the bounds of the filesystem)
+- a filesystem (to organize data stored on the disk)
+
+14. When two files are hard linked, they will have the same \_\_\_\_
+
+- Correct selection: inode
+- The filename does not need to be the same, nor does the location
+
+15. Currently the default filesystem optimized for use with Linux operating systems:
+
+- Correct selection: ext4
+- NTFS - Windows
+- HFS / HFS+ - Apple
+- FAT / exFAT - Windows once upon a time (still seen in USB drives)
+
+16. Why is it best practice to eject / unmount a filesystem?
+
+- TODO: grade
+
+17. `ls -lah` shows a file with the following permissions:  
+    `---------- 1 sally org 1.7K Jun 2 22:01 demo`  
+    The user sally needs to read and write, member of org need to read and execute, and others on the system cannot use the file.  
+    Write a command or commands to change the permissions as specified.
+
+- `chmod 650 demo` OR `chmod u+rw,g+rx demo`
+- TODO: grade
+
+18. A computer is hosting a website and has an SSH server installed for me to remotely connect and manage things via command line. Assume all things have been left in their default configurations and there is a public key on the system and I have a copy of the corresponding private key.  
+    The firewall is configured to allow inbound traffic to ports 80 and 443.  
+    Why can't I connect to the machine with SSH?
+
+- Port 80 and 443 handle HTTP and HTTPS (respectively) traffic by default. Port 22 is the default port for SSH, and has not been listed as open in the inbound rules.
+- TODO: grade
+
+19. Forks of a process work within the process memory - resources for the process are shared. Threads are independent processes that report their status to the parent process, but otherwise have their own resources.
+
+- False. Definitions are flipped
+
+20. In virtual machines, the \_\_\_\_ manages shared resources, such as CPU, RAM, and disk operations, between the host OS and the guest OS(s).
+
+- hypervisor
+- TODO: grade
