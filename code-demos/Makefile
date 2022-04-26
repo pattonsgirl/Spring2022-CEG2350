@@ -1,13 +1,25 @@
-# targets: pre-reqs
-	# actions
-# compile the program
+# This is an example of a Makefile for Java in Linux
+#       I recommend to compare this to the Makefile-C example given
+#               since it has more thorough comments
 
-default: hello-c.c
-	gcc -Wall -o hello-by-makefile hello-c.c
+# define java compiler & java program
+#   Note: it would be better to do an absolute path to javac & java
+JCC = javac
+JV = java
 
-go: hello-by-makefile
-	./hello-by-makefile
+# define compilation flag(s)
+#   -g compiles with debugging information
+JFLAGS = -g
 
-# cleaning things up
-clean: hello-by-makefile
-	rm hello-by-makefile
+# default action of my makefile (because this is first)
+#       pre-req is that demo.java exists
+default: Main.java
+	$(JCC) $(JFLAGS) Main.java
+
+# defining target (or command to be used with make) to run my program
+execute: Main.class
+	$(JV) Main
+
+# defining target to delete my compiled program
+delete: 
+	rm Main.class
