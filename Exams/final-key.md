@@ -136,15 +136,18 @@ git push # pushes local commits to GitHub
     The user sally needs to read and write, member of org need to read and execute, and others on the system cannot use the file.  
     Write a command or commands to change the permissions as specified.
 
-- `chmod 650 demo` OR `chmod u+rw,g+rx demo`
-- TODO: grade
+- numeric permissions:
+  - read = 4
+  - write = 2
+  - execute = 1
+  - add together the values of permissions to set for user group other in that order
+- `chmod 650 demo` OR `chmod u+rw,g+rx,o-rwx demo` (or variation of)
 
 18. A computer is hosting a website and has an SSH server installed for me to remotely connect and manage things via command line. Assume all things have been left in their default configurations and there is a public key on the system and I have a copy of the corresponding private key.  
     The firewall is configured to allow inbound traffic to ports 80 and 443.  
     Why can't I connect to the machine with SSH?
 
 - Port 80 and 443 handle HTTP and HTTPS (respectively) traffic by default. Port 22 is the default port for SSH, and has not been listed as open in the inbound rules.
-- TODO: grade
 
 19. Forks of a process work within the process memory - resources for the process are shared. Threads are independent processes that report their status to the parent process, but otherwise have their own resources.
 
@@ -153,4 +156,3 @@ git push # pushes local commits to GitHub
 20. In virtual machines, the \_\_\_\_ manages shared resources, such as CPU, RAM, and disk operations, between the host OS and the guest OS(s).
 
 - hypervisor
-- TODO: grade
