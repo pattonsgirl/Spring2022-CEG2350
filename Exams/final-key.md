@@ -35,7 +35,23 @@
    Put differently, if I am on a private subnet with IP 10.0.0.89/24, how is traffic sent and received from a website, like https://pilot.wright.edu?  
    Use NAT in your answer.
 
-- TODO
+- Student answer 1:
+  - My packet goes to the gateway
+  - The gateway sends the packet to border router
+  - Border router rewrites packet so that the IP address says it's from the public IP address of the router rather than my computer's IP address (this is the NAT, network address translation)
+  - Packet comes back, border router sends it back the the original IP address
+  - Packet goes through the same series of gateways in reverse
+  - I see my grades [in Pilot]
+- Student answer 2:
+  - Private subnet data are handled using NAT (network address translation) which essentially rewrites the source and/or destination address of IP packets when they pass through a router or firewall. The NAT process works as follows:
+  - Computers within the local network send IP packets w/ the recipient's TCP/IP socket (which are used for connections between computers, and include ip address and host port data) to a router, and the router replaces the sender's socket with an unused socket of its own. Replies to the sender socket are forwarded to the appropriate computer in the local net, replacing the recipient address (router socket) w/ the client's socket.
+  - This way, the private subnet address replaces all sender addresses for packets on the local subnet (and this can be set up as a router rule). This can be very useful for security rules and traffic control in general.
+- Student answer 3:
+  - Your machine in the private subnet is unable to receive traffic from the internet directly, but by using the NAT device your machine could then send and receive internet traffic (e.g. https://pilot.wright.edu) in the public subnet.
+- Student answer 4:
+  - Your browser requests a connection to a website. It uses DNS to find the website's IP, which is not part of the local subnet. Because it's outside its subnet, it turns to it's configured gateway.
+  - The gateway then sends packets to the website's IP (which may involve other gateways). Because this involves communication between a private and public IPs, NAT is involved. NAT remembers which private IP and port was used to initiate communication.
+  - The website server responds similarly, communicating back to the originating public IP and port. NAT sees this incoming connection, remembers the private IP and port that initiated communication, and sends those packets to your local machine.
 
 5. Service logs show IP address 28.45.32.10 is being bothersome. They have been trying username / password pairs to attempt to log in via SSH, they've been sending non-stop requests to my webserver on ports 80 and 443 and are generally causing a headache.  
    Which iptables rule would best block traffic from the offending IP address?
@@ -66,8 +82,6 @@ myday: code.c
     gcc -o spring code.c
 ```
 
-- TODO: grade
-
 7. A child process exits, but a parent process has not yet cleaned it up. What process status would the child process have?
 
 - Correct selection: zombie
@@ -93,8 +107,6 @@ git commit # text editor will open, enter a message, save and quit
 # OR git commit -am "message here" - this one would add files that are already being tracked to the commit
 git push # pushes local commits to GitHub
 ```
-
-- TODO: grade
 
 11. I have a new feature I would like to add to my project, which is in a git repository. In terms of git workflow, where should I develop the new feature?
 
@@ -129,7 +141,9 @@ git push # pushes local commits to GitHub
 
 16. Why is it best practice to eject / unmount a filesystem?
 
-- TODO: grade
+- TLDR: changes may be pending. Unplugging without using "eject" or "unmount" can cause problems with writing out data
+- Changes are not written live / frequently. Using an open file as an example, changes to that file are not written as they are made - they are written in bulk as more of a new file state. When a filesystem is unmounted, it is a safe way for the system to check that there are no current processes dependent on data on that filesystem and that data has finished being written out.
+- The most common / frequent case is when using a USB drive. If the drive (filesystem) is not ejected, all data changes may not have been written. This can cause corruption of the individual file - in worse cases, it can cause corruption of the filesystem.
 
 17. `ls -lah` shows a file with the following permissions:  
     `---------- 1 sally org 1.7K Jun 2 22:01 demo`  
