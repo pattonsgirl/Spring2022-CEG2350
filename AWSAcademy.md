@@ -20,7 +20,7 @@
    - You'll need this for Connecting to the AWS Environment (below)
 8. Click **AWS** which should have a green dot next to it located on the left
    - This will take you to your AWS Console for your account. Now the fun begins.
-9. In a new tab, enter the following URL in the browser (or click link to open): https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=ceg2350&templateURL=https:%2F%2Fwsu-cecs-cf-templates.s3.us-east-2.amazonaws.com%2Fcourse-templates%2Fceg2350.yml
+9. In a new tab, enter the following URL in the browser (or click link to open): <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=ceg2350&templateURL=https:%2F%2Fwsu-cecs-cf-templates.s3.us-east-2.amazonaws.com%2Fcourse-templates%2Fceg2350.yml" target="_blank">https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=ceg2350&templateURL=https:%2F%2Fwsu-cecs-cf-templates.s3.us-east-2.amazonaws.com%2Fcourse-templates%2Fceg2350.yml</a>
 
    - On the first menu, click Next
    - On the second menu, under Parameters, under Key Name, select `vockey`
@@ -77,6 +77,7 @@ Every 4 hours, instances (virtual machines) on AWS will automatically power down
 ### Need to log in?
 
 1. Log on to the [AWS Canvas portal](https://awsacademy.instructure.com/login/canvas)
+   - Opens new page: <a href="https://awsacademy.instructure.com/login/canvas" target="_blank">AWS Canvas portal</a>
 2. Within the course, click **Modules**
 3. Click **Learner Lab - Foundational Services**
 4. Click the **Start Lab** Play button on the middle right
